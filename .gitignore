@@ -205,3 +205,69 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# === PROJECT-SPECIFIC ADDITIONS ===
+
+# Security & Secrets - CRITICAL
+.env*
+config.ini
+secrets.json
+*token*
+*secret*
+*key*
+bot_config.py
+
+# Database files
+*.db
+*.sqlite*
+bot.db
+japanese_bot.db
+*.sql
+*.dump
+database_backup/
+
+# Audio & Media
+data/audio/*.mp3
+data/audio/*.wav
+data/audio/*.ogg
+pronunciation_files/
+uploads/
+temp_audio/
+voice_messages/
+*.mp4
+*.avi
+
+# Bot temporary files
+sessions/
+user_sessions/
+chat_states/
+downloads/
+temp/
+cache/
+redis_dump.rdb
+
+# Testing
+test.db
+test_*.sqlite
+htmlcov/
+.coverage
+coverage.xml
+*.prof
+
+# Docker & Deployment
+docker_data/
+postgres_data/
+redis_data/
+docker-compose.override.yml
+k8s-secrets.yaml
+production.yml
+
+# Large content files
+data/content/audio/
+data/content/large_datasets/
+analytics_export/
+user_data_export/
+logs/analytics/
+*.bak
+*.backup
+content_backup/
