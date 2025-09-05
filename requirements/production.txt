@@ -1,0 +1,18 @@
+# Production dependencies
+-r base.txt
+
+# Production database support
+psycopg2-binary==2.9.9
+
+# Redis for caching
+redis==5.0.1
+
+# Production WSGI server
+gunicorn==21.2.0
+
+# Monitoring and logging
+sentry-sdk==1.39.2
+structlog==23.2.0
+
+# Performance monitoring
+prometheus-client==0.19.0

@@ -1,0 +1,151 @@
+# Japanese Learning Bot - Complete Project Structure
+
+## Root Directory
+```
+japanese_learning_bot/
+├── app/                        # Main application code
+├── data/                       # Content and media files
+├── tests/                      # All test files
+├── deployment/                 # Deployment configurations
+├── monitoring/                 # Monitoring and observability
+├── docs/                       # Documentation
+├── .github/                    # GitHub Actions workflows
+├── requirements/               # Python dependencies
+├── .env.example               # Environment variables template
+├── .gitignore                 # Git ignore rules
+├── .dockerignore              # Docker ignore rules
+├── Makefile                   # Build and deployment commands
+├── pyproject.toml             # Python project configuration
+└── README.md                  # Project documentation
+```
+
+## app/ - Main Application
+```
+app/
+├── __init__.py
+├── main.py                    # Application entry point
+├── bot/                       # Telegram bot logic
+│   ├── __init__.py
+│   ├── handlers/              # Message and command handlers
+│   │   ├── __init__.py
+│   │   ├── start.py           # Welcome and onboarding
+│   │   ├── lesson.py          # Lesson management
+│   │   ├── quiz.py            # Quiz functionality
+│   │   ├── progress.py        # Progress tracking
+│   │   └── settings.py        # User preferences
+│   ├── keyboards/             # Inline keyboard definitions
+│   ├── states.py              # Conversation states
+│   └── middleware/            # Custom middleware
+├── core/                      # Core system components
+│   ├── __init__.py
+│   ├── config.py              # Configuration management
+│   ├── database.py            # Database connection and models
+│   ├── cache.py               # Redis caching layer
+│   └── exceptions.py          # Custom exceptions
+├── services/                  # Business logic layer
+│   ├── __init__.py
+│   ├── lesson_service.py      # Lesson logic and content delivery
+│   ├── progress_service.py    # Progress tracking and analytics
+│   ├── reminder_service.py    # Reminder scheduling
+│   ├── analytics_service.py   # User analytics and metrics
+│   └── content_service.py     # Content management
+├── models/                    # Data models
+│   ├── __init__.py
+│   ├── user.py                # User data models
+│   ├── lesson.py              # Lesson and content models
+│   ├── progress.py            # Progress tracking models
+│   └── analytics.py           # Analytics data models
+└── utils/                     # Utility functions
+    ├── __init__.py
+    ├── spaced_repetition.py   # Spaced repetition algorithm
+    ├── validators.py          # Input validation
+    ├── formatters.py          # Data formatting
+    └── helpers.py             # General helper functions
+```
+
+## data/ - Content and Media
+```
+data/
+├── content/                   # Learning content
+│   ├── hiragana/
+│   │   ├── basic.json         # Basic hiragana characters
+│   │   ├── combinations.json  # Character combinations
+│   │   └── advanced.json      # Advanced patterns
+│   ├── katakana/              # Katakana content files
+│   ├── vocabulary/            # Vocabulary lessons
+│   └── cultural_notes/        # Cultural context
+├── audio/                     # Pronunciation files
+├── images/                    # Visual aids and mnemonics
+└── migrations/                # Database migration files
+```
+
+## tests/ - Testing Suite
+```
+tests/
+├── unit/                      # Unit tests
+│   ├── test_services/         # Service layer tests
+│   ├── test_models/           # Model tests
+│   └── test_utils/            # Utility function tests
+├── integration/               # Integration tests
+│   ├── test_bot_handlers/     # Bot handler tests
+│   └── test_database/         # Database integration tests
+├── e2e/                       # End-to-end tests
+│   └── test_user_flows/       # Complete user journey tests
+└── conftest.py                # Pytest configuration
+```
+
+## deployment/ - Deployment Configuration
+```
+deployment/
+├── docker/                    # Docker configurations
+│   ├── Dockerfile             # Application container
+│   ├── docker-compose.yml     # Local development
+│   └── docker-compose.prod.yml # Production setup
+├── kubernetes/                # Kubernetes manifests
+│   ├── namespace.yaml         # K8s namespace
+│   ├── deployment.yaml        # Application deployment
+│   ├── service.yaml           # Service definition
+│   └── ingress.yaml           # Ingress configuration
+└── scripts/                   # Deployment scripts
+    ├── deploy.sh              # Deployment automation
+    ├── backup.sh              # Database backup
+    └── migrate.sh             # Migration runner
+```
+
+## monitoring/ - Observability
+```
+monitoring/
+├── prometheus/                # Metrics collection
+│   └── config.yml             # Prometheus configuration
+├── grafana/                   # Visualization
+│   └── dashboards/            # Pre-built dashboards
+└── alerts/                    # Alerting rules
+    └── rules.yml              # Alert definitions
+```
+
+## docs/ - Documentation
+```
+docs/
+├── api/                       # API documentation
+├── deployment/                # Deployment guides
+├── development/               # Development setup
+└── user/                      # User guides
+```
+
+## .github/ - CI/CD
+```
+.github/
+└── workflows/                 # GitHub Actions
+    ├── test.yml               # Testing workflow
+    ├── build.yml              # Build workflow
+    └── deploy.yml             # Deployment workflow
+```
+
+## requirements/ - Dependencies
+```
+requirements/
+├── base.txt                   # Core dependencies
+├── development.txt            # Development dependencies
+└── production.txt             # Production dependencies
+```
+

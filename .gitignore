@@ -210,7 +210,6 @@ __marimo__/
 # === PROJECT-SPECIFIC ADDITIONS ===
 
 # Security & Secrets - CRITICAL
-.env*
 config.ini
 secrets.json
 *token*
