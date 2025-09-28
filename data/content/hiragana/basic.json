@@ -1,0 +1,306 @@
+{
+  "metadata": {
+    "name": "Basic Hiragana Characters",
+    "description": "Core hiragana characters for beginners",
+    "difficulty": 1,
+    "total_characters": 15,
+    "category": "hiragana_basic",
+    "version": "1.0"
+  },
+  "characters": [
+    {
+      "id": "hira_001",
+      "character": "あ",
+      "romaji": "a",
+      "pronunciation": "/a/",
+      "meaning": "vowel sound 'ah'",
+      "difficulty": 1,
+      "stroke_order": ["一", "丿"],
+      "mnemonics": "Looks like an 'A' with a cross on top",
+      "examples": [
+        {
+          "word": "あした",
+          "romaji": "ashita",
+          "meaning": "tomorrow"
+        }
+      ],
+      "common_mistakes": ["Confusing with 'o' sound"],
+      "tags": ["vowel", "basic", "first_learned"]
+    },
+    {
+      "id": "hira_002",
+      "character": "い",
+      "romaji": "i",
+      "pronunciation": "/i/",
+      "meaning": "vowel sound 'ee'",
+      "difficulty": 1,
+      "stroke_order": ["丿", "一"],
+      "mnemonics": "Two strokes like two 'i' dots",
+      "examples": [
+        {
+          "word": "いえ",
+          "romaji": "ie",
+          "meaning": "house"
+        }
+      ],
+      "common_mistakes": ["Drawing strokes in wrong order"],
+      "tags": ["vowel", "basic"]
+    },
+    {
+      "id": "hira_003",
+      "character": "う",
+      "romaji": "u",
+      "pronunciation": "/u/",
+      "meaning": "vowel sound 'oo'",
+      "difficulty": 1,
+      "stroke_order": ["フ", "丿"],
+      "mnemonics": "Looks like 'u' with a hat",
+      "examples": [
+        {
+          "word": "うし",
+          "romaji": "ushi",
+          "meaning": "cow"
+        }
+      ],
+      "common_mistakes": ["Not rounding lips enough for pronunciation"],
+      "tags": ["vowel", "basic"]
+    },
+    {
+      "id": "hira_004",
+      "character": "え",
+      "romaji": "e",
+      "pronunciation": "/e/",
+      "meaning": "vowel sound 'eh'",
+      "difficulty": 1,
+      "stroke_order": ["一", "丿", "一"],
+      "mnemonics": "Like an 'e' getting ready to run",
+      "examples": [
+        {
+          "word": "えき",
+          "romaji": "eki",
+          "meaning": "station"
+        }
+      ],
+      "common_mistakes": ["Confusing with katakana エ"],
+      "tags": ["vowel", "basic"]
+    },
+    {
+      "id": "hira_005",
+      "character": "お",
+      "romaji": "o",
+      "pronunciation": "/o/",
+      "meaning": "vowel sound 'oh'",
+      "difficulty": 1,
+      "stroke_order": ["丿", "一", "丨"],
+      "mnemonics": "Looks like someone saying 'Oh!'",
+      "examples": [
+        {
+          "word": "おちゃ",
+          "romaji": "ocha",
+          "meaning": "tea"
+        }
+      ],
+      "common_mistakes": ["Confusing with 'a' sound"],
+      "tags": ["vowel", "basic", "polite_prefix"]
+    },
+    {
+      "id": "hira_006",
+      "character": "か",
+      "romaji": "ka",
+      "pronunciation": "/ka/",
+      "meaning": "consonant-vowel sound 'kah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿", "一"],
+      "mnemonics": "Looks like a key (ka = key mnemonic)",
+      "examples": [
+        {
+          "word": "かぞく",
+          "romaji": "kazoku",
+          "meaning": "family"
+        }
+      ],
+      "common_mistakes": ["Not making sharp 'k' sound"],
+      "tags": ["consonant", "basic", "k_row"]
+    },
+    {
+      "id": "hira_007",
+      "character": "き",
+      "romaji": "ki",
+      "pronunciation": "/ki/",
+      "meaning": "consonant-vowel sound 'kee'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿", "丶"],
+      "mnemonics": "Looks like a key with teeth",
+      "examples": [
+        {
+          "word": "きれい",
+          "romaji": "kirei",
+          "meaning": "beautiful/clean"
+        }
+      ],
+      "common_mistakes": ["Stroke order confusion"],
+      "tags": ["consonant", "basic", "k_row"]
+    },
+    {
+      "id": "hira_008",
+      "character": "く",
+      "romaji": "ku",
+      "pronunciation": "/ku/",
+      "meaning": "consonant-vowel sound 'koo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿"],
+      "mnemonics": "Looks like cuckoo bird beak",
+      "examples": [
+        {
+          "word": "くるま",
+          "romaji": "kuruma",
+          "meaning": "car"
+        }
+      ],
+      "common_mistakes": ["Making it too curvy"],
+      "tags": ["consonant", "basic", "k_row"]
+    },
+    {
+      "id": "hira_009",
+      "character": "け",
+      "romaji": "ke",
+      "pronunciation": "/ke/",
+      "meaning": "consonant-vowel sound 'keh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿", "一"],
+      "mnemonics": "Looks like a keg on its side",
+      "examples": [
+        {
+          "word": "けっこん",
+          "romaji": "kekkon",
+          "meaning": "marriage"
+        }
+      ],
+      "common_mistakes": ["Confusing with similar characters"],
+      "tags": ["consonant", "basic", "k_row"]
+    },
+    {
+      "id": "hira_010",
+      "character": "こ",
+      "romaji": "ko",
+      "pronunciation": "/ko/",
+      "meaning": "consonant-vowel sound 'koh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like a smile with a nose",
+      "examples": [
+        {
+          "word": "こども",
+          "romaji": "kodomo",
+          "meaning": "child"
+        }
+      ],
+      "common_mistakes": ["Making second stroke too long"],
+      "tags": ["consonant", "basic", "k_row"]
+    },
+    {
+      "id": "hira_011",
+      "character": "さ",
+      "romaji": "sa",
+      "pronunciation": "/sa/",
+      "meaning": "consonant-vowel sound 'sah'",
+      "difficulty": 3,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like someone doing sign language",
+      "examples": [
+        {
+          "word": "さくら",
+          "romaji": "sakura",
+          "meaning": "cherry blossom"
+        }
+      ],
+      "common_mistakes": ["Not connecting strokes properly"],
+      "tags": ["consonant", "basic", "s_row"]
+    },
+    {
+      "id": "hira_012",
+      "character": "し",
+      "romaji": "shi",
+      "pronunciation": "/ʃi/",
+      "meaning": "consonant-vowel sound 'shee'",
+      "difficulty": 3,
+      "stroke_order": ["丿", "丨", "丿"],
+      "mnemonics": "Looks like a fishing hook",
+      "examples": [
+        {
+          "word": "しごと",
+          "romaji": "shigoto",
+          "meaning": "work/job"
+        }
+      ],
+      "common_mistakes": ["Pronouncing as 'see' instead of 'she'"],
+      "tags": ["consonant", "basic", "s_row", "irregular_pronunciation"]
+    },
+    {
+      "id": "hira_013",
+      "character": "す",
+      "romaji": "su",
+      "pronunciation": "/su/",
+      "meaning": "consonant-vowel sound 'soo'",
+      "difficulty": 3,
+      "stroke_order": ["一", "丿", "丨"],
+      "mnemonics": "Looks like a swing set",
+      "examples": [
+        {
+          "word": "すし",
+          "romaji": "sushi",
+          "meaning": "sushi"
+        }
+      ],
+      "common_mistakes": ["Making it too angular"],
+      "tags": ["consonant", "basic", "s_row"]
+    },
+    {
+      "id": "hira_014",
+      "character": "せ",
+      "romaji": "se",
+      "pronunciation": "/se/",
+      "meaning": "consonant-vowel sound 'seh'",
+      "difficulty": 3,
+      "stroke_order": ["一", "丿", "丨", "一"],
+      "mnemonics": "Looks like a complex say 'se'",
+      "examples": [
+        {
+          "word": "せんせい",
+          "romaji": "sensei",
+          "meaning": "teacher"
+        }
+      ],
+      "common_mistakes": ["Forgetting the bottom stroke"],
+      "tags": ["consonant", "basic", "s_row"]
+    },
+    {
+      "id": "hira_015",
+      "character": "そ",
+      "romaji": "so",
+      "pronunciation": "/so/",
+      "meaning": "consonant-vowel sound 'soh'",
+      "difficulty": 3,
+      "stroke_order": ["一", "丿"],
+      "mnemonics": "Looks like a sewing needle and thread",
+      "examples": [
+        {
+          "word": "そば",
+          "romaji": "soba",
+          "meaning": "buckwheat noodles"
+        }
+      ],
+      "common_mistakes": ["Making the curve too tight"],
+      "tags": ["consonant", "basic", "s_row"]
+    }
+  ],
+  "learning_progression": {
+    "suggested_order": ["あ", "い", "う", "え", "お", "か", "き", "く", "け", "こ", "さ", "し", "す", "せ", "そ"],
+    "difficulty_groups": {
+      "group_1_vowels": ["あ", "い", "う", "え", "お"],
+      "group_2_k_row": ["か", "き", "く", "け", "こ"],
+      "group_3_s_row": ["さ", "し", "す", "せ", "そ"]
+    },
+    "estimated_time": "2-3 days for vowels, 3-4 days for each consonant row"
+  }
+}
