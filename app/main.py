@@ -44,6 +44,18 @@ from app.bot.handlers.settings import (
     toggle_reminders,
     settings_done,
 )
+from app.bot.handlers.lesson import (
+    lesson_command,
+    start_lesson,
+    handle_lesson_navigation,
+    show_practice_question,
+    reveal_practice_answer,
+    record_practice_result,
+    cancel_lesson,
+    SELECTING_CONTENT,
+    LEARNING_CHARACTER,
+    PRACTICING,
+)
 
 
 async def main() -> None:
@@ -92,6 +104,30 @@ async def main() -> None:
     # Basic commands
     application.add_handler(CommandHandler("start", start_handler))
     application.add_handler(CommandHandler("help", help_handler))
+
+    # Lesson conversation handler
+    lesson_conv_handler = ConversationHandler(
+        entry_points=[CommandHandler("lesson", lesson_command)],
+        states={
+            SELECTING_CONTENT: [
+                CallbackQueryHandler(start_lesson, pattern="^lesson_"),
+            ],
+            LEARNING_CHARACTER: [
+                CallbackQueryHandler(handle_lesson_navigation, pattern="^lesson_"),
+            ],
+            PRACTICING: [
+                CallbackQueryHandler(
+                    show_practice_question, pattern="^practice_start$"
+                ),
+                CallbackQueryHandler(
+                    reveal_practice_answer, pattern="^practice_reveal$"
+                ),
+                CallbackQueryHandler(record_practice_result, pattern="^practice_"),
+            ],
+        },
+        fallbacks=[CommandHandler("cancel", cancel_lesson)],
+    )
+    application.add_handler(lesson_conv_handler)
 
     # Review conversation handler
     review_conv_handler = ConversationHandler(
