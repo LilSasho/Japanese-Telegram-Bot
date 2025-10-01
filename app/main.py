@@ -12,11 +12,38 @@ import sys
 from pathlib import Path
 
 from telegram import Update
-from telegram.ext import Application, CommandHandler, ContextTypes
+from telegram.ext import (
+    Application,
+    CommandHandler,
+    CallbackQueryHandler,
+    ConversationHandler,
+    MessageHandler,
+    filters,
+    ContextTypes,
+)
 
 from app.core.config import Config
 from app.core.database import DatabaseManager
 from app.bot.handlers.start import start_handler, help_handler
+from app.bot.handlers.review import (
+    review_command,
+    start_review_session,
+    reveal_answer,
+    record_quality_rating,
+    cancel_review,
+    REVIEWING,
+    RATING_QUALITY,
+)
+from app.bot.handlers.progress import (
+    progress_command,
+    stats_command,
+    streak_command,
+)
+from app.bot.handlers.settings import (
+    reminders_command,
+    toggle_reminders,
+    settings_done,
+)
 
 
 async def main() -> None:
@@ -62,8 +89,39 @@ async def main() -> None:
     application = Application.builder().token(config.BOT_TOKEN).build()
 
     # Register handlers
+    # Basic commands
     application.add_handler(CommandHandler("start", start_handler))
     application.add_handler(CommandHandler("help", help_handler))
+
+    # Review conversation handler
+    review_conv_handler = ConversationHandler(
+        entry_points=[CommandHandler("review", review_command)],
+        states={
+            REVIEWING: [
+                CallbackQueryHandler(start_review_session, pattern="^review_"),
+            ],
+            RATING_QUALITY: [
+                CallbackQueryHandler(reveal_answer, pattern="^reveal_answer$"),
+                CallbackQueryHandler(record_quality_rating, pattern="^quality_"),
+            ],
+        },
+        fallbacks=[CommandHandler("cancel", cancel_review)],
+    )
+    application.add_handler(review_conv_handler)
+
+    # Progress and statistics commands
+    application.add_handler(CommandHandler("progress", progress_command))
+    application.add_handler(CommandHandler("stats", stats_command))
+    application.add_handler(CommandHandler("streak", streak_command))
+
+    # Settings and reminders
+    application.add_handler(CommandHandler("reminders", reminders_command))
+    application.add_handler(
+        CallbackQueryHandler(toggle_reminders, pattern="^reminder_toggle$")
+    )
+    application.add_handler(
+        CallbackQueryHandler(settings_done, pattern="^settings_done$")
+    )
 
     # Error handler
     async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
