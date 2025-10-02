@@ -29,6 +29,7 @@ logger = logging.getLogger(__name__)
 
 class ContentCategory(Enum):
     """Categories of learning content."""
+
     HIRAGANA_BASIC = "hiragana_basic"
     HIRAGANA_COMBINATIONS = "hiragana_combinations"
     HIRAGANA_ADVANCED = "hiragana_advanced"
@@ -46,6 +47,7 @@ class ContentCategory(Enum):
 
 class ContentType(Enum):
     """Types of learning content."""
+
     HIRAGANA = "hiragana"
     KATAKANA = "katakana"
     KANJI = "kanji"
@@ -56,6 +58,7 @@ class ContentType(Enum):
 @dataclass
 class CharacterExample:
     """Represents an example usage of a character."""
+
     word: str
     romaji: str
     meaning: str
@@ -64,6 +67,7 @@ class CharacterExample:
 @dataclass
 class CharacterData:
     """Represents a Japanese character with all associated learning data."""
+
     id: str
     character: str
     romaji: str
@@ -96,6 +100,7 @@ class CharacterData:
 @dataclass
 class ContentMetadata:
     """Metadata for a content file."""
+
     name: str
     description: str
     difficulty: int
@@ -107,6 +112,7 @@ class ContentMetadata:
 @dataclass
 class LearningProgression:
     """Learning progression information."""
+
     suggested_order: List[str]
     difficulty_groups: Dict[str, List[str]]
     estimated_time: Optional[str] = None
@@ -115,6 +121,7 @@ class LearningProgression:
 @dataclass
 class ContentFile:
     """Complete content file data structure."""
+
     metadata: ContentMetadata
     characters: List[CharacterData]
     learning_progression: Optional[LearningProgression] = None
@@ -133,7 +140,7 @@ class ContentSearchFilter:
         romaji_pattern: Optional[str] = None,
         meaning_pattern: Optional[str] = None,
         exclude_learned: bool = False,
-        learned_character_ids: Optional[Set[str]] = None
+        learned_character_ids: Optional[Set[str]] = None,
     ):
         self.content_types = content_types or []
         self.categories = categories or []
@@ -211,7 +218,7 @@ class ContentService:
             True if loaded successfully, False otherwise
         """
         try:
-            with open(file_path, 'r', encoding='utf-8') as f:
+            with open(file_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
 
             content_file = self._parse_content_file(data, file_path)
@@ -229,7 +236,9 @@ class ContentService:
             logger.error(f"Error loading content file {file_path}: {e}")
             return False
 
-    def _parse_content_file(self, data: Dict[str, Any], file_path: Path) -> Optional[ContentFile]:
+    def _parse_content_file(
+        self, data: Dict[str, Any], file_path: Path
+    ) -> Optional[ContentFile]:
         """
         Parse JSON data into a ContentFile object.
 
@@ -242,44 +251,46 @@ class ContentService:
         """
         try:
             # Parse metadata
-            metadata_data = data.get('metadata', {})
+            metadata_data = data.get("metadata", {})
             metadata = ContentMetadata(
-                name=metadata_data.get('name', file_path.stem),
-                description=metadata_data.get('description', ''),
-                difficulty=metadata_data.get('difficulty', 1),
-                total_characters=metadata_data.get('total_characters', 0),
-                category=metadata_data.get('category', 'unknown'),
-                version=metadata_data.get('version', '1.0')
+                name=metadata_data.get("name", file_path.stem),
+                description=metadata_data.get("description", ""),
+                difficulty=metadata_data.get("difficulty", 1),
+                total_characters=metadata_data.get("total_characters", 0),
+                category=metadata_data.get("category", "unknown"),
+                version=metadata_data.get("version", "1.0"),
             )
 
             # Parse characters
             characters = []
-            for char_data in data.get('characters', []):
+            for char_data in data.get("characters", []):
                 character = self._parse_character_data(char_data, file_path)
                 if character:
                     characters.append(character)
 
             # Parse learning progression (optional)
             learning_progression = None
-            if 'learning_progression' in data:
-                prog_data = data['learning_progression']
+            if "learning_progression" in data:
+                prog_data = data["learning_progression"]
                 learning_progression = LearningProgression(
-                    suggested_order=prog_data.get('suggested_order', []),
-                    difficulty_groups=prog_data.get('difficulty_groups', {}),
-                    estimated_time=prog_data.get('estimated_time')
+                    suggested_order=prog_data.get("suggested_order", []),
+                    difficulty_groups=prog_data.get("difficulty_groups", {}),
+                    estimated_time=prog_data.get("estimated_time"),
                 )
 
             return ContentFile(
                 metadata=metadata,
                 characters=characters,
-                learning_progression=learning_progression
+                learning_progression=learning_progression,
             )
 
         except Exception as e:
             logger.error(f"Error parsing content file {file_path}: {e}")
             return None
 
-    def _parse_character_data(self, char_data: Dict[str, Any], file_path: Path) -> Optional[CharacterData]:
+    def _parse_character_data(
+        self, char_data: Dict[str, Any], file_path: Path
+    ) -> Optional[CharacterData]:
         """
         Parse character data from JSON.
 
@@ -293,11 +304,11 @@ class ContentService:
         try:
             # Parse examples
             examples = []
-            for example_data in char_data.get('examples', []):
+            for example_data in char_data.get("examples", []):
                 example = CharacterExample(
-                    word=example_data.get('word', ''),
-                    romaji=example_data.get('romaji', ''),
-                    meaning=example_data.get('meaning', '')
+                    word=example_data.get("word", ""),
+                    romaji=example_data.get("romaji", ""),
+                    meaning=example_data.get("meaning", ""),
                 )
                 examples.append(example)
 
@@ -306,22 +317,22 @@ class ContentService:
             category = self._determine_category(file_path, char_data)
 
             character = CharacterData(
-                id=char_data.get('id', ''),
-                character=char_data.get('character', ''),
-                romaji=char_data.get('romaji', ''),
-                pronunciation=char_data.get('pronunciation', ''),
-                meaning=char_data.get('meaning'),
-                difficulty=char_data.get('difficulty', 1),
-                stroke_order=char_data.get('stroke_order', []),
-                mnemonics=char_data.get('mnemonics'),
+                id=char_data.get("id", ""),
+                character=char_data.get("character", ""),
+                romaji=char_data.get("romaji", ""),
+                pronunciation=char_data.get("pronunciation", ""),
+                meaning=char_data.get("meaning"),
+                difficulty=char_data.get("difficulty", 1),
+                stroke_order=char_data.get("stroke_order", []),
+                mnemonics=char_data.get("mnemonics"),
                 examples=examples,
-                common_mistakes=char_data.get('common_mistakes', []),
-                tags=char_data.get('tags', []),
+                common_mistakes=char_data.get("common_mistakes", []),
+                tags=char_data.get("tags", []),
                 category=category,
                 content_type=content_type,
-                audio_file=char_data.get('audio_file'),
-                stroke_count=char_data.get('stroke_count'),
-                frequency=char_data.get('frequency')
+                audio_file=char_data.get("audio_file"),
+                stroke_count=char_data.get("stroke_count"),
+                frequency=char_data.get("frequency"),
             )
 
             return character
@@ -335,52 +346,54 @@ class ContentService:
         path_parts = file_path.parts
         for part in path_parts:
             part_lower = part.lower()
-            if 'hiragana' in part_lower:
+            if "hiragana" in part_lower:
                 return ContentType.HIRAGANA
-            elif 'katakana' in part_lower:
+            elif "katakana" in part_lower:
                 return ContentType.KATAKANA
-            elif 'kanji' in part_lower:
+            elif "kanji" in part_lower:
                 return ContentType.KANJI
-            elif 'vocabulary' in part_lower:
+            elif "vocabulary" in part_lower:
                 return ContentType.VOCABULARY
-            elif 'cultural' in part_lower:
+            elif "cultural" in part_lower:
                 return ContentType.CULTURAL
         return None
 
-    def _determine_category(self, file_path: Path, char_data: Dict[str, Any]) -> Optional[ContentCategory]:
+    def _determine_category(
+        self, file_path: Path, char_data: Dict[str, Any]
+    ) -> Optional[ContentCategory]:
         """Determine content category from file path and character data."""
         path_str = str(file_path).lower()
 
         # Try to match known category patterns
-        if 'hiragana' in path_str:
-            if 'basic' in path_str:
+        if "hiragana" in path_str:
+            if "basic" in path_str:
                 return ContentCategory.HIRAGANA_BASIC
-            elif 'combination' in path_str:
+            elif "combination" in path_str:
                 return ContentCategory.HIRAGANA_COMBINATIONS
-            elif 'advanced' in path_str:
+            elif "advanced" in path_str:
                 return ContentCategory.HIRAGANA_ADVANCED
-        elif 'katakana' in path_str:
-            if 'basic' in path_str:
+        elif "katakana" in path_str:
+            if "basic" in path_str:
                 return ContentCategory.KATAKANA_BASIC
-            elif 'combination' in path_str:
+            elif "combination" in path_str:
                 return ContentCategory.KATAKANA_COMBINATIONS
-            elif 'advanced' in path_str:
+            elif "advanced" in path_str:
                 return ContentCategory.KATAKANA_ADVANCED
-        elif 'kanji' in path_str:
-            if 'basic' in path_str:
+        elif "kanji" in path_str:
+            if "basic" in path_str:
                 return ContentCategory.KANJI_BASIC
-            elif 'intermediate' in path_str:
+            elif "intermediate" in path_str:
                 return ContentCategory.KANJI_INTERMEDIATE
-            elif 'advanced' in path_str:
+            elif "advanced" in path_str:
                 return ContentCategory.KANJI_ADVANCED
-        elif 'vocabulary' in path_str:
-            if 'basic' in path_str:
+        elif "vocabulary" in path_str:
+            if "basic" in path_str:
                 return ContentCategory.VOCABULARY_BASIC
-            elif 'intermediate' in path_str:
+            elif "intermediate" in path_str:
                 return ContentCategory.VOCABULARY_INTERMEDIATE
-            elif 'advanced' in path_str:
+            elif "advanced" in path_str:
                 return ContentCategory.VOCABULARY_ADVANCED
-        elif 'cultural' in path_str:
+        elif "cultural" in path_str:
             return ContentCategory.CULTURAL_NOTES
 
         return None
@@ -394,7 +407,9 @@ class ContentService:
                 if character.id:
                     self._character_index[character.id] = character
 
-        logger.debug(f"Built character index with {len(self._character_index)} characters")
+        logger.debug(
+            f"Built character index with {len(self._character_index)} characters"
+        )
 
     async def get_character_by_id(self, character_id: str) -> Optional[CharacterData]:
         """
@@ -413,7 +428,7 @@ class ContentService:
         self,
         difficulty: int,
         content_type: Optional[ContentType] = None,
-        limit: Optional[int] = None
+        limit: Optional[int] = None,
     ) -> List[CharacterData]:
         """
         Get characters by difficulty level.
@@ -441,9 +456,7 @@ class ContentService:
         return characters
 
     async def get_characters_by_category(
-        self,
-        category: ContentCategory,
-        limit: Optional[int] = None
+        self, category: ContentCategory, limit: Optional[int] = None
     ) -> List[CharacterData]:
         """
         Get characters by content category.
@@ -467,7 +480,9 @@ class ContentService:
 
         return characters
 
-    async def search_characters(self, search_filter: ContentSearchFilter) -> List[CharacterData]:
+    async def search_characters(
+        self, search_filter: ContentSearchFilter
+    ) -> List[CharacterData]:
         """
         Search characters using advanced filtering.
 
@@ -488,7 +503,9 @@ class ContentService:
 
         return results
 
-    def _matches_filter(self, character: CharacterData, search_filter: ContentSearchFilter) -> bool:
+    def _matches_filter(
+        self, character: CharacterData, search_filter: ContentSearchFilter
+    ) -> bool:
         """
         Check if a character matches the search filter.
 
@@ -500,11 +517,17 @@ class ContentService:
             True if character matches all filter criteria
         """
         # Content type filter
-        if search_filter.content_types and character.content_type not in search_filter.content_types:
+        if (
+            search_filter.content_types
+            and character.content_type not in search_filter.content_types
+        ):
             return False
 
         # Category filter
-        if search_filter.categories and character.category not in search_filter.categories:
+        if (
+            search_filter.categories
+            and character.category not in search_filter.categories
+        ):
             return False
 
         # Difficulty range filter
@@ -520,26 +543,37 @@ class ContentService:
 
         # Character pattern filter
         if search_filter.character_pattern:
-            if not fnmatch.fnmatch(character.character, search_filter.character_pattern):
+            if not fnmatch.fnmatch(
+                character.character, search_filter.character_pattern
+            ):
                 return False
 
         # Romaji pattern filter
         if search_filter.romaji_pattern:
-            if not fnmatch.fnmatch(character.romaji.lower(), search_filter.romaji_pattern.lower()):
+            if not fnmatch.fnmatch(
+                character.romaji.lower(), search_filter.romaji_pattern.lower()
+            ):
                 return False
 
         # Meaning pattern filter
         if search_filter.meaning_pattern and character.meaning:
-            if not fnmatch.fnmatch(character.meaning.lower(), search_filter.meaning_pattern.lower()):
+            if not fnmatch.fnmatch(
+                character.meaning.lower(), search_filter.meaning_pattern.lower()
+            ):
                 return False
 
         # Exclude learned characters
-        if search_filter.exclude_learned and character.id in search_filter.learned_character_ids:
+        if (
+            search_filter.exclude_learned
+            and character.id in search_filter.learned_character_ids
+        ):
             return False
 
         return True
 
-    async def get_learning_progression(self, category: ContentCategory) -> Optional[LearningProgression]:
+    async def get_learning_progression(
+        self, category: ContentCategory
+    ) -> Optional[LearningProgression]:
         """
         Get learning progression for a category.
 
@@ -561,7 +595,7 @@ class ContentService:
         self,
         learned_characters: Set[str],
         review_count: int = 10,
-        prefer_difficult: bool = True
+        prefer_difficult: bool = True,
     ) -> List[CharacterData]:
         """
         Get suggested characters for spaced repetition review.
@@ -590,10 +624,7 @@ class ContentService:
         return review_candidates[:review_count]
 
     async def get_next_characters_to_learn(
-        self,
-        learned_characters: Set[str],
-        content_type: ContentType,
-        count: int = 5
+        self, learned_characters: Set[str], content_type: ContentType, count: int = 5
     ) -> List[CharacterData]:
         """
         Get the next characters to learn based on learning progression.
@@ -612,7 +643,9 @@ class ContentService:
         candidates = []
 
         for content_file in self._content_cache.values():
-            if any(char.content_type == content_type for char in content_file.characters):
+            if any(
+                char.content_type == content_type for char in content_file.characters
+            ):
                 # Use learning progression if available
                 if content_file.learning_progression:
                     suggested_order = content_file.learning_progression.suggested_order
@@ -626,8 +659,10 @@ class ContentService:
                 else:
                     # Fall back to difficulty-based ordering
                     unlearned = [
-                        char for char in content_file.characters
-                        if char.content_type == content_type and char.id not in learned_characters
+                        char
+                        for char in content_file.characters
+                        if char.content_type == content_type
+                        and char.id not in learned_characters
                     ]
                     unlearned.sort(key=lambda x: (x.difficulty, x.id))
                     candidates.extend(unlearned[:count])
@@ -644,11 +679,11 @@ class ContentService:
         await self._ensure_initialized()
 
         stats = {
-            'total_files': len(self._content_cache),
-            'total_characters': len(self._character_index),
-            'content_types': {},
-            'categories': {},
-            'difficulty_distribution': {},
+            "total_files": len(self._content_cache),
+            "total_characters": len(self._character_index),
+            "content_types": {},
+            "categories": {},
+            "difficulty_distribution": {},
         }
 
         # Count by content type and category
@@ -656,16 +691,22 @@ class ContentService:
             # Content type stats
             if character.content_type:
                 content_type_name = character.content_type.value
-                stats['content_types'][content_type_name] = stats['content_types'].get(content_type_name, 0) + 1
+                stats["content_types"][content_type_name] = (
+                    stats["content_types"].get(content_type_name, 0) + 1
+                )
 
             # Category stats
             if character.category:
                 category_name = character.category.value
-                stats['categories'][category_name] = stats['categories'].get(category_name, 0) + 1
+                stats["categories"][category_name] = (
+                    stats["categories"].get(category_name, 0) + 1
+                )
 
             # Difficulty stats
             difficulty = character.difficulty
-            stats['difficulty_distribution'][difficulty] = stats['difficulty_distribution'].get(difficulty, 0) + 1
+            stats["difficulty_distribution"][difficulty] = (
+                stats["difficulty_distribution"].get(difficulty, 0) + 1
+            )
 
         return stats
 
@@ -679,12 +720,12 @@ class ContentService:
         await self._ensure_initialized()
 
         issues = {
-            'missing_ids': [],
-            'duplicate_ids': [],
-            'missing_characters': [],
-            'missing_romaji': [],
-            'invalid_difficulty': [],
-            'missing_examples': [],
+            "missing_ids": [],
+            "duplicate_ids": [],
+            "missing_characters": [],
+            "missing_romaji": [],
+            "invalid_difficulty": [],
+            "missing_examples": [],
         }
 
         seen_ids = set()
@@ -693,31 +734,37 @@ class ContentService:
             for character in content_file.characters:
                 # Check for missing IDs
                 if not character.id:
-                    issues['missing_ids'].append(f"Character '{character.character}' missing ID")
+                    issues["missing_ids"].append(
+                        f"Character '{character.character}' missing ID"
+                    )
 
                 # Check for duplicate IDs
                 if character.id in seen_ids:
-                    issues['duplicate_ids'].append(f"Duplicate ID: {character.id}")
+                    issues["duplicate_ids"].append(f"Duplicate ID: {character.id}")
                 else:
                     seen_ids.add(character.id)
 
                 # Check for missing character
                 if not character.character:
-                    issues['missing_characters'].append(f"ID '{character.id}' missing character")
+                    issues["missing_characters"].append(
+                        f"ID '{character.id}' missing character"
+                    )
 
                 # Check for missing romaji
                 if not character.romaji:
-                    issues['missing_romaji'].append(f"Character '{character.character}' missing romaji")
+                    issues["missing_romaji"].append(
+                        f"Character '{character.character}' missing romaji"
+                    )
 
                 # Check difficulty range
                 if not (1 <= character.difficulty <= 5):
-                    issues['invalid_difficulty'].append(
+                    issues["invalid_difficulty"].append(
                         f"Character '{character.character}' has invalid difficulty: {character.difficulty}"
                     )
 
                 # Check for missing examples (warning for advanced content)
                 if character.difficulty > 2 and not character.examples:
-                    issues['missing_examples'].append(
+                    issues["missing_examples"].append(
                         f"Advanced character '{character.character}' has no examples"
                     )
 
@@ -743,33 +790,32 @@ class ContentService:
 
 # Convenience functions for common operations
 
+
 async def create_difficulty_filter(
     min_difficulty: int = 1,
     max_difficulty: int = 5,
-    content_type: Optional[ContentType] = None
+    content_type: Optional[ContentType] = None,
 ) -> ContentSearchFilter:
     """Create a filter for difficulty range."""
     return ContentSearchFilter(
         content_types=[content_type] if content_type else None,
-        difficulty_range=(min_difficulty, max_difficulty)
+        difficulty_range=(min_difficulty, max_difficulty),
     )
 
+
 async def create_tag_filter(
-    tags: List[str],
-    content_type: Optional[ContentType] = None
+    tags: List[str], content_type: Optional[ContentType] = None
 ) -> ContentSearchFilter:
     """Create a filter for specific tags."""
     return ContentSearchFilter(
-        content_types=[content_type] if content_type else None,
-        tags=tags
+        content_types=[content_type] if content_type else None, tags=tags
     )
 
+
 async def create_learning_filter(
-    learned_characters: Set[str],
-    exclude_learned: bool = True
+    learned_characters: Set[str], exclude_learned: bool = True
 ) -> ContentSearchFilter:
     """Create a filter that excludes or includes learned characters."""
     return ContentSearchFilter(
-        exclude_learned=exclude_learned,
-        learned_character_ids=learned_characters
+        exclude_learned=exclude_learned, learned_character_ids=learned_characters
     )

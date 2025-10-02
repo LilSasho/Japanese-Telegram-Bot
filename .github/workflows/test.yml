@@ -22,27 +22,24 @@ jobs:
       with:
         python-version: '3.12'
     
-    # Install what we need
+    # Install dependencies
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install python-telegram-bot pytest
         pip install -r requirements.txt
-    
+
     # Check code quality
     - name: Check code style
       run: |
         pip install black flake8
-        black --check .
-        flake8 . --max-line-length=88 --ignore=E203,W503
-    
+        black --check app/ tests/
+        flake8 app/ tests/ --max-line-length=88 --ignore=E203,W503
+
     # Run tests
-    - name: Run tests
-        # For now, just check if main.py imports correctly
-        # Later you'll add: pytest tests/
+    - name: Run pytest test suite
       run: |
-        python -c "import main; print('✅ main.py imported successfully')"
-        
+        PYTHONPATH=. pytest tests/unit/ -v --no-cov
+
       env:
         # Don't use a real bot token in tests
         BOT_TOKEN: "fake_token_for_testing"
