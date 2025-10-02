@@ -56,6 +56,21 @@ from app.bot.handlers.lesson import (
     LEARNING_CHARACTER,
     PRACTICING,
 )
+from app.bot.handlers.quiz import (
+    quiz_command,
+    quiz_mode_selected,
+    quiz_difficulty_selected,
+    quiz_content_selected,
+    handle_quiz_answer_button,
+    handle_quiz_answer_text,
+    next_question,
+    cancel_quiz,
+    SELECTING_MODE,
+    SELECTING_DIFFICULTY,
+    SELECTING_CONTENT as QUIZ_SELECTING_CONTENT,
+    ANSWERING,
+    SHOW_RESULT,
+)
 
 
 async def main() -> None:
@@ -144,6 +159,36 @@ async def main() -> None:
         fallbacks=[CommandHandler("cancel", cancel_review)],
     )
     application.add_handler(review_conv_handler)
+
+    # Quiz conversation handler
+    quiz_conv_handler = ConversationHandler(
+        entry_points=[CommandHandler("quiz", quiz_command)],
+        states={
+            SELECTING_MODE: [
+                CallbackQueryHandler(quiz_mode_selected, pattern="^quiz_mode_"),
+                CallbackQueryHandler(cancel_quiz, pattern="^quiz_cancel$"),
+            ],
+            SELECTING_DIFFICULTY: [
+                CallbackQueryHandler(quiz_difficulty_selected, pattern="^quiz_diff_"),
+                CallbackQueryHandler(cancel_quiz, pattern="^quiz_cancel$"),
+            ],
+            QUIZ_SELECTING_CONTENT: [
+                CallbackQueryHandler(quiz_content_selected, pattern="^quiz_content_"),
+                CallbackQueryHandler(cancel_quiz, pattern="^quiz_cancel$"),
+            ],
+            ANSWERING: [
+                CallbackQueryHandler(handle_quiz_answer_button, pattern="^quiz_"),
+                MessageHandler(
+                    filters.TEXT & ~filters.COMMAND, handle_quiz_answer_text
+                ),
+            ],
+            SHOW_RESULT: [
+                CallbackQueryHandler(next_question, pattern="^quiz_next$"),
+            ],
+        },
+        fallbacks=[CommandHandler("cancel", cancel_quiz)],
+    )
+    application.add_handler(quiz_conv_handler)
 
     # Progress and statistics commands
     application.add_handler(CommandHandler("progress", progress_command))
