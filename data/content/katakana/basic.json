@@ -1,0 +1,913 @@
+{
+  "metadata": {
+    "name": "Complete Katakana Characters",
+    "description": "All 46 basic katakana characters for foreign words",
+    "difficulty": 2,
+    "total_characters": 46,
+    "category": "katakana_basic",
+    "version": "1.0"
+  },
+  "characters": [
+    {
+      "id": "kata_001",
+      "character": "ア",
+      "romaji": "a",
+      "pronunciation": "/a/",
+      "meaning": "vowel sound 'ah'",
+      "difficulty": 1,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like an axe",
+      "examples": [
+        {
+          "word": "アメリカ",
+          "romaji": "amerika",
+          "meaning": "America"
+        }
+      ],
+      "common_mistakes": ["Confusing with イ"],
+      "tags": ["vowel", "basic", "foreign_words"]
+    },
+    {
+      "id": "kata_002",
+      "character": "イ",
+      "romaji": "i",
+      "pronunciation": "/i/",
+      "meaning": "vowel sound 'ee'",
+      "difficulty": 1,
+      "stroke_order": ["丨", "一"],
+      "mnemonics": "Looks like two sticks leaning",
+      "examples": [
+        {
+          "word": "イタリア",
+          "romaji": "itaria",
+          "meaning": "Italy"
+        }
+      ],
+      "common_mistakes": ["Making strokes too curved"],
+      "tags": ["vowel", "basic", "foreign_words"]
+    },
+    {
+      "id": "kata_003",
+      "character": "ウ",
+      "romaji": "u",
+      "pronunciation": "/u/",
+      "meaning": "vowel sound 'oo'",
+      "difficulty": 1,
+      "stroke_order": ["フ", "丨"],
+      "mnemonics": "Looks like a smiling mouth",
+      "examples": [
+        {
+          "word": "ウイスキー",
+          "romaji": "uisukii",
+          "meaning": "whiskey"
+        }
+      ],
+      "common_mistakes": ["Not making strokes angular enough"],
+      "tags": ["vowel", "basic", "foreign_words"]
+    },
+    {
+      "id": "kata_004",
+      "character": "エ",
+      "romaji": "e",
+      "pronunciation": "/e/",
+      "meaning": "vowel sound 'eh'",
+      "difficulty": 1,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like a gate or elevator",
+      "examples": [
+        {
+          "word": "エレベーター",
+          "romaji": "erebeetaa",
+          "meaning": "elevator"
+        }
+      ],
+      "common_mistakes": ["Confusing with hiragana え"],
+      "tags": ["vowel", "basic", "foreign_words"]
+    },
+    {
+      "id": "kata_005",
+      "character": "オ",
+      "romaji": "o",
+      "pronunciation": "/o/",
+      "meaning": "vowel sound 'oh'",
+      "difficulty": 1,
+      "stroke_order": ["一", "一", "一"],
+      "mnemonics": "Looks like three lines stacked",
+      "examples": [
+        {
+          "word": "オレンジ",
+          "romaji": "orenji",
+          "meaning": "orange"
+        }
+      ],
+      "common_mistakes": ["Making lines uneven"],
+      "tags": ["vowel", "basic", "foreign_words"]
+    },
+    {
+      "id": "kata_006",
+      "character": "カ",
+      "romaji": "ka",
+      "pronunciation": "/ka/",
+      "meaning": "consonant-vowel sound 'kah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like cutting with a knife",
+      "examples": [
+        {
+          "word": "カメラ",
+          "romaji": "kamera",
+          "meaning": "camera"
+        }
+      ],
+      "common_mistakes": ["Confusing with 力"],
+      "tags": ["consonant", "basic", "k_row", "foreign_words"]
+    },
+    {
+      "id": "kata_007",
+      "character": "キ",
+      "romaji": "ki",
+      "pronunciation": "/ki/",
+      "meaning": "consonant-vowel sound 'kee'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like a key",
+      "examples": [
+        {
+          "word": "キス",
+          "romaji": "kisu",
+          "meaning": "kiss"
+        }
+      ],
+      "common_mistakes": ["Making the horizontal lines slanted"],
+      "tags": ["consonant", "basic", "k_row", "foreign_words"]
+    },
+    {
+      "id": "kata_008",
+      "character": "ク",
+      "romaji": "ku",
+      "pronunciation": "/ku/",
+      "meaning": "consonant-vowel sound 'koo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like a claw",
+      "examples": [
+        {
+          "word": "クラス",
+          "romaji": "kurasu",
+          "meaning": "class"
+        }
+      ],
+      "common_mistakes": ["Making it too curved"],
+      "tags": ["consonant", "basic", "k_row", "foreign_words"]
+    },
+    {
+      "id": "kata_009",
+      "character": "ケ",
+      "romaji": "ke",
+      "pronunciation": "/ke/",
+      "meaning": "consonant-vowel sound 'keh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like a keg",
+      "examples": [
+        {
+          "word": "ケーキ",
+          "romaji": "keeki",
+          "meaning": "cake"
+        }
+      ],
+      "common_mistakes": ["Confusing with ク"],
+      "tags": ["consonant", "basic", "k_row", "foreign_words"]
+    },
+    {
+      "id": "kata_010",
+      "character": "コ",
+      "romaji": "ko",
+      "pronunciation": "/ko/",
+      "meaning": "consonant-vowel sound 'koh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "一"],
+      "mnemonics": "Looks like two corners",
+      "examples": [
+        {
+          "word": "コーヒー",
+          "romaji": "koohii",
+          "meaning": "coffee"
+        }
+      ],
+      "common_mistakes": ["Making lines too long"],
+      "tags": ["consonant", "basic", "k_row", "foreign_words"]
+    },
+    {
+      "id": "kata_011",
+      "character": "サ",
+      "romaji": "sa",
+      "pronunciation": "/sa/",
+      "meaning": "consonant-vowel sound 'sah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like a saw",
+      "examples": [
+        {
+          "word": "サラダ",
+          "romaji": "sarada",
+          "meaning": "salad"
+        }
+      ],
+      "common_mistakes": ["Not keeping strokes straight"],
+      "tags": ["consonant", "basic", "s_row", "foreign_words"]
+    },
+    {
+      "id": "kata_012",
+      "character": "シ",
+      "romaji": "shi",
+      "pronunciation": "/ʃi/",
+      "meaning": "consonant-vowel sound 'shee'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like a smile with three lines",
+      "examples": [
+        {
+          "word": "シャツ",
+          "romaji": "shatsu",
+          "meaning": "shirt"
+        }
+      ],
+      "common_mistakes": ["Pronouncing as 'see' instead of 'she'"],
+      "tags": ["consonant", "basic", "s_row", "foreign_words", "irregular_pronunciation"]
+    },
+    {
+      "id": "kata_013",
+      "character": "ス",
+      "romaji": "su",
+      "pronunciation": "/su/",
+      "meaning": "consonant-vowel sound 'soo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like a slide",
+      "examples": [
+        {
+          "word": "スプーン",
+          "romaji": "supuun",
+          "meaning": "spoon"
+        }
+      ],
+      "common_mistakes": ["Making the angle too sharp"],
+      "tags": ["consonant", "basic", "s_row", "foreign_words"]
+    },
+    {
+      "id": "kata_014",
+      "character": "セ",
+      "romaji": "se",
+      "pronunciation": "/se/",
+      "meaning": "consonant-vowel sound 'seh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like saying something",
+      "examples": [
+        {
+          "word": "セーター",
+          "romaji": "seetaa",
+          "meaning": "sweater"
+        }
+      ],
+      "common_mistakes": ["Confusing with hiragana せ"],
+      "tags": ["consonant", "basic", "s_row", "foreign_words"]
+    },
+    {
+      "id": "kata_015",
+      "character": "ソ",
+      "romaji": "so",
+      "pronunciation": "/so/",
+      "meaning": "consonant-vowel sound 'soh'",
+      "difficulty": 2,
+      "stroke_order": ["丨", "一"],
+      "mnemonics": "Looks like a sword tip",
+      "examples": [
+        {
+          "word": "ソファ",
+          "romaji": "sofa",
+          "meaning": "sofa"
+        }
+      ],
+      "common_mistakes": ["Confusing with ン"],
+      "tags": ["consonant", "basic", "s_row", "foreign_words"]
+    },
+    {
+      "id": "kata_016",
+      "character": "タ",
+      "romaji": "ta",
+      "pronunciation": "/ta/",
+      "meaning": "consonant-vowel sound 'tah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like a table from above",
+      "examples": [
+        {
+          "word": "タクシー",
+          "romaji": "takushii",
+          "meaning": "taxi"
+        }
+      ],
+      "common_mistakes": ["Making strokes uneven"],
+      "tags": ["consonant", "basic", "t_row", "foreign_words"]
+    },
+    {
+      "id": "kata_017",
+      "character": "チ",
+      "romaji": "chi",
+      "pronunciation": "/tʃi/",
+      "meaning": "consonant-vowel sound 'chee'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like a cheerleader",
+      "examples": [
+        {
+          "word": "チーズ",
+          "romaji": "chiizu",
+          "meaning": "cheese"
+        }
+      ],
+      "common_mistakes": ["Pronouncing as 'tee' instead of 'chee'"],
+      "tags": ["consonant", "basic", "t_row", "foreign_words", "irregular_pronunciation"]
+    },
+    {
+      "id": "kata_018",
+      "character": "ツ",
+      "romaji": "tsu",
+      "pronunciation": "/tsu/",
+      "meaning": "consonant-vowel sound 'tsoo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like a tsunami wave",
+      "examples": [
+        {
+          "word": "ツアー",
+          "romaji": "tsuaa",
+          "meaning": "tour"
+        }
+      ],
+      "common_mistakes": ["Confusing with シ"],
+      "tags": ["consonant", "basic", "t_row", "foreign_words", "irregular_pronunciation"]
+    },
+    {
+      "id": "kata_019",
+      "character": "テ",
+      "romaji": "te",
+      "pronunciation": "/te/",
+      "meaning": "consonant-vowel sound 'teh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like a tent",
+      "examples": [
+        {
+          "word": "テレビ",
+          "romaji": "terebi",
+          "meaning": "television"
+        }
+      ],
+      "common_mistakes": ["Making the strokes curved"],
+      "tags": ["consonant", "basic", "t_row", "foreign_words"]
+    },
+    {
+      "id": "kata_020",
+      "character": "ト",
+      "romaji": "to",
+      "pronunciation": "/to/",
+      "meaning": "consonant-vowel sound 'toh'",
+      "difficulty": 2,
+      "stroke_order": ["丨", "一"],
+      "mnemonics": "Looks like a toe",
+      "examples": [
+        {
+          "word": "トマト",
+          "romaji": "tomato",
+          "meaning": "tomato"
+        }
+      ],
+      "common_mistakes": ["Making it look like カ"],
+      "tags": ["consonant", "basic", "t_row", "foreign_words"]
+    },
+    {
+      "id": "kata_021",
+      "character": "ナ",
+      "romaji": "na",
+      "pronunciation": "/na/",
+      "meaning": "consonant-vowel sound 'nah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like a knife",
+      "examples": [
+        {
+          "word": "ナイフ",
+          "romaji": "naifu",
+          "meaning": "knife"
+        }
+      ],
+      "common_mistakes": ["Confusing with メ"],
+      "tags": ["consonant", "basic", "n_row", "foreign_words"]
+    },
+    {
+      "id": "kata_022",
+      "character": "ニ",
+      "romaji": "ni",
+      "pronunciation": "/ni/",
+      "meaning": "consonant-vowel sound 'nee'",
+      "difficulty": 1,
+      "stroke_order": ["一", "一"],
+      "mnemonics": "Two lines (ni = 2 in Japanese)",
+      "examples": [
+        {
+          "word": "ニュース",
+          "romaji": "nyuusu",
+          "meaning": "news"
+        }
+      ],
+      "common_mistakes": ["Making lines slanted"],
+      "tags": ["consonant", "basic", "n_row", "foreign_words", "simple"]
+    },
+    {
+      "id": "kata_023",
+      "character": "ヌ",
+      "romaji": "nu",
+      "pronunciation": "/nu/",
+      "meaning": "consonant-vowel sound 'noo'",
+      "difficulty": 2,
+      "stroke_order": ["丿", "一"],
+      "mnemonics": "Looks like noodles",
+      "examples": [
+        {
+          "word": "ヌードル",
+          "romaji": "nuudoru",
+          "meaning": "noodle"
+        }
+      ],
+      "common_mistakes": ["Making the curve too tight"],
+      "tags": ["consonant", "basic", "n_row", "foreign_words"]
+    },
+    {
+      "id": "kata_024",
+      "character": "ネ",
+      "romaji": "ne",
+      "pronunciation": "/ne/",
+      "meaning": "consonant-vowel sound 'neh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丨", "一"],
+      "mnemonics": "Looks like a net",
+      "examples": [
+        {
+          "word": "ネクタイ",
+          "romaji": "nekutai",
+          "meaning": "necktie"
+        }
+      ],
+      "common_mistakes": ["Missing strokes"],
+      "tags": ["consonant", "basic", "n_row", "foreign_words"]
+    },
+    {
+      "id": "kata_025",
+      "character": "ノ",
+      "romaji": "no",
+      "pronunciation": "/no/",
+      "meaning": "consonant-vowel sound 'noh'",
+      "difficulty": 1,
+      "stroke_order": ["丿"],
+      "mnemonics": "One slash like saying 'no'",
+      "examples": [
+        {
+          "word": "ノート",
+          "romaji": "nooto",
+          "meaning": "notebook"
+        }
+      ],
+      "common_mistakes": ["Making it curved"],
+      "tags": ["consonant", "basic", "n_row", "foreign_words", "simple"]
+    },
+    {
+      "id": "kata_026",
+      "character": "ハ",
+      "romaji": "ha",
+      "pronunciation": "/ha/",
+      "meaning": "consonant-vowel sound 'hah'",
+      "difficulty": 2,
+      "stroke_order": ["丿", "丨"],
+      "mnemonics": "Looks like laughing 'ha ha'",
+      "examples": [
+        {
+          "word": "ハンバーガー",
+          "romaji": "hanbaagaa",
+          "meaning": "hamburger"
+        }
+      ],
+      "common_mistakes": ["Confusing with hiragana は"],
+      "tags": ["consonant", "basic", "h_row", "foreign_words"]
+    },
+    {
+      "id": "kata_027",
+      "character": "ヒ",
+      "romaji": "hi",
+      "pronunciation": "/hi/",
+      "meaning": "consonant-vowel sound 'hee'",
+      "difficulty": 2,
+      "stroke_order": ["丨", "一"],
+      "mnemonics": "Looks like saying 'hi'",
+      "examples": [
+        {
+          "word": "ヒント",
+          "romaji": "hinto",
+          "meaning": "hint"
+        }
+      ],
+      "common_mistakes": ["Making strokes too curved"],
+      "tags": ["consonant", "basic", "h_row", "foreign_words"]
+    },
+    {
+      "id": "kata_028",
+      "character": "フ",
+      "romaji": "fu",
+      "pronunciation": "/ɸu/",
+      "meaning": "consonant-vowel sound 'foo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like Mount Fuji profile",
+      "examples": [
+        {
+          "word": "フライ",
+          "romaji": "furai",
+          "meaning": "fry/fried"
+        }
+      ],
+      "common_mistakes": ["Pronouncing as 'hoo' instead of 'foo'"],
+      "tags": ["consonant", "basic", "h_row", "foreign_words", "irregular_pronunciation"]
+    },
+    {
+      "id": "kata_029",
+      "character": "ヘ",
+      "romaji": "he",
+      "pronunciation": "/he/",
+      "meaning": "consonant-vowel sound 'heh'",
+      "difficulty": 1,
+      "stroke_order": ["一"],
+      "mnemonics": "Simple roof shape",
+      "examples": [
+        {
+          "word": "ヘリコプター",
+          "romaji": "herikoputaa",
+          "meaning": "helicopter"
+        }
+      ],
+      "common_mistakes": ["Confusing with hiragana へ"],
+      "tags": ["consonant", "basic", "h_row", "foreign_words", "simple"]
+    },
+    {
+      "id": "kata_030",
+      "character": "ホ",
+      "romaji": "ho",
+      "pronunciation": "/ho/",
+      "meaning": "consonant-vowel sound 'hoh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一", "丨"],
+      "mnemonics": "Looks like saying 'ho ho ho'",
+      "examples": [
+        {
+          "word": "ホテル",
+          "romaji": "hoteru",
+          "meaning": "hotel"
+        }
+      ],
+      "common_mistakes": ["Missing the center stroke"],
+      "tags": ["consonant", "basic", "h_row", "foreign_words"]
+    },
+    {
+      "id": "kata_031",
+      "character": "マ",
+      "romaji": "ma",
+      "pronunciation": "/ma/",
+      "meaning": "consonant-vowel sound 'mah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like mama",
+      "examples": [
+        {
+          "word": "マンション",
+          "romaji": "manshon",
+          "meaning": "apartment/mansion"
+        }
+      ],
+      "common_mistakes": ["Making it too rounded"],
+      "tags": ["consonant", "basic", "m_row", "foreign_words"]
+    },
+    {
+      "id": "kata_032",
+      "character": "ミ",
+      "romaji": "mi",
+      "pronunciation": "/mi/",
+      "meaning": "consonant-vowel sound 'mee'",
+      "difficulty": 2,
+      "stroke_order": ["一", "一", "一"],
+      "mnemonics": "Three lines like the number 3",
+      "examples": [
+        {
+          "word": "ミルク",
+          "romaji": "miruku",
+          "meaning": "milk"
+        }
+      ],
+      "common_mistakes": ["Making lines parallel"],
+      "tags": ["consonant", "basic", "m_row", "foreign_words"]
+    },
+    {
+      "id": "kata_033",
+      "character": "ム",
+      "romaji": "mu",
+      "pronunciation": "/mu/",
+      "meaning": "consonant-vowel sound 'moo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like a cow saying 'moo'",
+      "examples": [
+        {
+          "word": "ムード",
+          "romaji": "muudo",
+          "meaning": "mood"
+        }
+      ],
+      "common_mistakes": ["Making it too angular"],
+      "tags": ["consonant", "basic", "m_row", "foreign_words"]
+    },
+    {
+      "id": "kata_034",
+      "character": "メ",
+      "romaji": "me",
+      "pronunciation": "/me/",
+      "meaning": "consonant-vowel sound 'meh'",
+      "difficulty": 2,
+      "stroke_order": ["丿", "丨"],
+      "mnemonics": "Looks like an X or cross",
+      "examples": [
+        {
+          "word": "メール",
+          "romaji": "meeru",
+          "meaning": "email"
+        }
+      ],
+      "common_mistakes": ["Not crossing in the center"],
+      "tags": ["consonant", "basic", "m_row", "foreign_words"]
+    },
+    {
+      "id": "kata_035",
+      "character": "モ",
+      "romaji": "mo",
+      "pronunciation": "/mo/",
+      "meaning": "consonant-vowel sound 'moh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like more",
+      "examples": [
+        {
+          "word": "モーター",
+          "romaji": "mootaa",
+          "meaning": "motor"
+        }
+      ],
+      "common_mistakes": ["Making strokes disconnected"],
+      "tags": ["consonant", "basic", "m_row", "foreign_words"]
+    },
+    {
+      "id": "kata_036",
+      "character": "ヤ",
+      "romaji": "ya",
+      "pronunciation": "/ja/",
+      "meaning": "consonant-vowel sound 'yah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like yawning",
+      "examples": [
+        {
+          "word": "ヤード",
+          "romaji": "yaado",
+          "meaning": "yard"
+        }
+      ],
+      "common_mistakes": ["Making it too simple"],
+      "tags": ["consonant", "basic", "y_row", "foreign_words"]
+    },
+    {
+      "id": "kata_037",
+      "character": "ユ",
+      "romaji": "yu",
+      "pronunciation": "/ju/",
+      "meaning": "consonant-vowel sound 'yoo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like a U-turn",
+      "examples": [
+        {
+          "word": "ユーモア",
+          "romaji": "yuumoa",
+          "meaning": "humor"
+        }
+      ],
+      "common_mistakes": ["Not making the hook"],
+      "tags": ["consonant", "basic", "y_row", "foreign_words"]
+    },
+    {
+      "id": "kata_038",
+      "character": "ヨ",
+      "romaji": "yo",
+      "pronunciation": "/jo/",
+      "meaning": "consonant-vowel sound 'yoh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "一", "一"],
+      "mnemonics": "Looks like a yo-yo",
+      "examples": [
+        {
+          "word": "ヨーグルト",
+          "romaji": "yooguruto",
+          "meaning": "yogurt"
+        }
+      ],
+      "common_mistakes": ["Making lines too long"],
+      "tags": ["consonant", "basic", "y_row", "foreign_words"]
+    },
+    {
+      "id": "kata_039",
+      "character": "ラ",
+      "romaji": "ra",
+      "pronunciation": "/ɾa/",
+      "meaning": "consonant-vowel sound 'rah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like a rabbit",
+      "examples": [
+        {
+          "word": "ラジオ",
+          "romaji": "rajio",
+          "meaning": "radio"
+        }
+      ],
+      "common_mistakes": ["Pronouncing as 'la' instead of soft 'ra'"],
+      "tags": ["consonant", "basic", "r_row", "foreign_words"]
+    },
+    {
+      "id": "kata_040",
+      "character": "リ",
+      "romaji": "ri",
+      "pronunciation": "/ɾi/",
+      "meaning": "consonant-vowel sound 'ree'",
+      "difficulty": 2,
+      "stroke_order": ["丨", "丨"],
+      "mnemonics": "Two vertical lines like reeds",
+      "examples": [
+        {
+          "word": "リスト",
+          "romaji": "risuto",
+          "meaning": "list"
+        }
+      ],
+      "common_mistakes": ["Making lines not parallel"],
+      "tags": ["consonant", "basic", "r_row", "foreign_words"]
+    },
+    {
+      "id": "kata_041",
+      "character": "ル",
+      "romaji": "ru",
+      "pronunciation": "/ɾu/",
+      "meaning": "consonant-vowel sound 'roo'",
+      "difficulty": 2,
+      "stroke_order": ["丿", "丨"],
+      "mnemonics": "Looks like a loop or rule",
+      "examples": [
+        {
+          "word": "ルール",
+          "romaji": "ruuru",
+          "meaning": "rule"
+        }
+      ],
+      "common_mistakes": ["Not making the curve smooth"],
+      "tags": ["consonant", "basic", "r_row", "foreign_words"]
+    },
+    {
+      "id": "kata_042",
+      "character": "レ",
+      "romaji": "re",
+      "pronunciation": "/ɾe/",
+      "meaning": "consonant-vowel sound 'reh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿"],
+      "mnemonics": "Looks like a rail",
+      "examples": [
+        {
+          "word": "レストラン",
+          "romaji": "resutoran",
+          "meaning": "restaurant"
+        }
+      ],
+      "common_mistakes": ["Making the angle wrong"],
+      "tags": ["consonant", "basic", "r_row", "foreign_words"]
+    },
+    {
+      "id": "kata_043",
+      "character": "ロ",
+      "romaji": "ro",
+      "pronunciation": "/ɾo/",
+      "meaning": "consonant-vowel sound 'roh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like a road box",
+      "examples": [
+        {
+          "word": "ロボット",
+          "romaji": "robotto",
+          "meaning": "robot"
+        }
+      ],
+      "common_mistakes": ["Not closing the box"],
+      "tags": ["consonant", "basic", "r_row", "foreign_words"]
+    },
+    {
+      "id": "kata_044",
+      "character": "ワ",
+      "romaji": "wa",
+      "pronunciation": "/wa/",
+      "meaning": "consonant-vowel sound 'wah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like waving",
+      "examples": [
+        {
+          "word": "ワイン",
+          "romaji": "wain",
+          "meaning": "wine"
+        }
+      ],
+      "common_mistakes": ["Confusing with ク"],
+      "tags": ["consonant", "basic", "w_row", "foreign_words"]
+    },
+    {
+      "id": "kata_045",
+      "character": "ヲ",
+      "romaji": "wo",
+      "pronunciation": "/o/",
+      "meaning": "object marker particle (pronounced 'o')",
+      "difficulty": 3,
+      "stroke_order": ["一", "丨", "丨"],
+      "mnemonics": "Special particle character",
+      "examples": [
+        {
+          "word": "ヲ",
+          "romaji": "wo",
+          "meaning": "object particle (rare in katakana)"
+        }
+      ],
+      "common_mistakes": ["Using this in modern katakana"],
+      "tags": ["consonant", "basic", "w_row", "particle", "rare"]
+    },
+    {
+      "id": "kata_046",
+      "character": "ン",
+      "romaji": "n",
+      "pronunciation": "/n/",
+      "meaning": "nasal sound 'n'",
+      "difficulty": 2,
+      "stroke_order": ["丨", "一"],
+      "mnemonics": "Looks like humming 'n'",
+      "examples": [
+        {
+          "word": "レストラン",
+          "romaji": "resutoran",
+          "meaning": "restaurant"
+        }
+      ],
+      "common_mistakes": ["Confusing with ソ"],
+      "tags": ["consonant", "basic", "special", "nasal", "foreign_words"]
+    }
+  ],
+  "learning_progression": {
+    "suggested_order": [
+      "ア", "イ", "ウ", "エ", "オ",
+      "カ", "キ", "ク", "ケ", "コ",
+      "サ", "シ", "ス", "セ", "ソ",
+      "タ", "チ", "ツ", "テ", "ト",
+      "ナ", "ニ", "ヌ", "ネ", "ノ",
+      "ハ", "ヒ", "フ", "ヘ", "ホ",
+      "マ", "ミ", "ム", "メ", "モ",
+      "ヤ", "ユ", "ヨ",
+      "ラ", "リ", "ル", "レ", "ロ",
+      "ワ", "ヲ", "ン"
+    ],
+    "difficulty_groups": {
+      "group_1_vowels": ["ア", "イ", "ウ", "エ", "オ"],
+      "group_2_k_row": ["カ", "キ", "ク", "ケ", "コ"],
+      "group_3_s_row": ["サ", "シ", "ス", "セ", "ソ"],
+      "group_4_t_row": ["タ", "チ", "ツ", "テ", "ト"],
+      "group_5_n_row": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "group_6_h_row": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "group_7_m_row": ["マ", "ミ", "ム", "メ", "モ"],
+      "group_8_y_row": ["ヤ", "ユ", "ヨ"],
+      "group_9_r_row": ["ラ", "リ", "ル", "レ", "ロ"],
+      "group_10_w_n": ["ワ", "ヲ", "ン"]
+    },
+    "estimated_time": "1-2 weeks if hiragana already known, 3 weeks if starting fresh"
+  }
+}

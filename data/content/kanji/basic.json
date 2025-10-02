@@ -1,0 +1,1032 @@
+{
+  "metadata": {
+    "name": "Basic Kanji Characters",
+    "description": "50 fundamental kanji for beginners (numbers, days, and common concepts)",
+    "difficulty": 3,
+    "total_characters": 50,
+    "category": "kanji_basic",
+    "version": "1.0"
+  },
+  "characters": [
+    {
+      "id": "kanji_001",
+      "character": "一",
+      "romaji": "ichi",
+      "pronunciation": "/itɕi/",
+      "meaning": "one",
+      "difficulty": 1,
+      "stroke_order": ["一"],
+      "stroke_count": 1,
+      "mnemonics": "One horizontal line represents the number one",
+      "examples": [
+        {
+          "word": "一人",
+          "romaji": "hitori",
+          "meaning": "one person, alone"
+        }
+      ],
+      "common_mistakes": ["Making the line slanted"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_002",
+      "character": "二",
+      "romaji": "ni",
+      "pronunciation": "/ni/",
+      "meaning": "two",
+      "difficulty": 1,
+      "stroke_order": ["一", "一"],
+      "stroke_count": 2,
+      "mnemonics": "Two horizontal lines represent the number two",
+      "examples": [
+        {
+          "word": "二人",
+          "romaji": "futari",
+          "meaning": "two people"
+        }
+      ],
+      "common_mistakes": ["Making lines uneven"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_003",
+      "character": "三",
+      "romaji": "san",
+      "pronunciation": "/san/",
+      "meaning": "three",
+      "difficulty": 1,
+      "stroke_order": ["一", "一", "一"],
+      "stroke_count": 3,
+      "mnemonics": "Three horizontal lines represent the number three",
+      "examples": [
+        {
+          "word": "三日",
+          "romaji": "mikka",
+          "meaning": "three days, third day"
+        }
+      ],
+      "common_mistakes": ["Making middle line too long"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_004",
+      "character": "四",
+      "romaji": "shi/yon",
+      "pronunciation": "/ɕi/, /jon/",
+      "meaning": "four",
+      "difficulty": 2,
+      "stroke_order": ["丨", "一", "丨", "一", "一"],
+      "stroke_count": 5,
+      "mnemonics": "Box with two lines inside",
+      "examples": [
+        {
+          "word": "四月",
+          "romaji": "shigatsu",
+          "meaning": "April"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_005",
+      "character": "五",
+      "romaji": "go",
+      "pronunciation": "/go/",
+      "meaning": "five",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一", "一"],
+      "stroke_count": 4,
+      "mnemonics": "Five strokes total",
+      "examples": [
+        {
+          "word": "五月",
+          "romaji": "gogatsu",
+          "meaning": "May"
+        }
+      ],
+      "common_mistakes": ["Connecting wrong strokes"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_006",
+      "character": "六",
+      "romaji": "roku",
+      "pronunciation": "/ɾokɯ/",
+      "meaning": "six",
+      "difficulty": 2,
+      "stroke_order": ["丶", "一", "丨", "丶"],
+      "stroke_count": 4,
+      "mnemonics": "Looks like a hat on a person",
+      "examples": [
+        {
+          "word": "六月",
+          "romaji": "rokugatsu",
+          "meaning": "June"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_007",
+      "character": "七",
+      "romaji": "shichi/nana",
+      "pronunciation": "/ɕitɕi/, /nana/",
+      "meaning": "seven",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿"],
+      "stroke_count": 2,
+      "mnemonics": "Cross with a tail",
+      "examples": [
+        {
+          "word": "七月",
+          "romaji": "shichigatsu",
+          "meaning": "July"
+        }
+      ],
+      "common_mistakes": ["Making it look like katakana ナ"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_008",
+      "character": "八",
+      "romaji": "hachi",
+      "pronunciation": "/hatɕi/",
+      "meaning": "eight",
+      "difficulty": 2,
+      "stroke_order": ["丿", "丶"],
+      "stroke_count": 2,
+      "mnemonics": "Two strokes spreading apart",
+      "examples": [
+        {
+          "word": "八月",
+          "romaji": "hachigatsu",
+          "meaning": "August"
+        }
+      ],
+      "common_mistakes": ["Making strokes parallel"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_009",
+      "character": "九",
+      "romaji": "kyuu/ku",
+      "pronunciation": "/kjɯː/, /kɯ/",
+      "meaning": "nine",
+      "difficulty": 2,
+      "stroke_order": ["丿", "一"],
+      "stroke_count": 2,
+      "mnemonics": "Looks like person with bent arm",
+      "examples": [
+        {
+          "word": "九月",
+          "romaji": "kugatsu",
+          "meaning": "September"
+        }
+      ],
+      "common_mistakes": ["Making the hook too small"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_010",
+      "character": "十",
+      "romaji": "juu",
+      "pronunciation": "/dʑɯː/",
+      "meaning": "ten",
+      "difficulty": 1,
+      "stroke_order": ["一", "丨"],
+      "stroke_count": 2,
+      "mnemonics": "Plus sign, ten fingers crossed",
+      "examples": [
+        {
+          "word": "十月",
+          "romaji": "juugatsu",
+          "meaning": "October"
+        }
+      ],
+      "common_mistakes": ["Making lines uneven"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_011",
+      "character": "百",
+      "romaji": "hyaku",
+      "pronunciation": "/hjakɯ/",
+      "meaning": "hundred",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿", "一", "丨", "一", "一"],
+      "stroke_count": 6,
+      "mnemonics": "One (一) white (白) makes hundred",
+      "examples": [
+        {
+          "word": "百円",
+          "romaji": "hyakuen",
+          "meaning": "100 yen"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order for 白 part"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_012",
+      "character": "千",
+      "romaji": "sen",
+      "pronunciation": "/sen/",
+      "meaning": "thousand",
+      "difficulty": 2,
+      "stroke_order": ["丿", "一", "丨"],
+      "stroke_count": 3,
+      "mnemonics": "Person (人) with a line on top",
+      "examples": [
+        {
+          "word": "千円",
+          "romaji": "sen'en",
+          "meaning": "1000 yen"
+        }
+      ],
+      "common_mistakes": ["Making it look like 十"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_013",
+      "character": "万",
+      "romaji": "man",
+      "pronunciation": "/man/",
+      "meaning": "ten thousand",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿", "一"],
+      "stroke_count": 3,
+      "mnemonics": "Simplified from complex character",
+      "examples": [
+        {
+          "word": "一万",
+          "romaji": "ichiman",
+          "meaning": "10,000"
+        }
+      ],
+      "common_mistakes": ["Making middle stroke too short"],
+      "tags": ["number", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_014",
+      "character": "円",
+      "romaji": "en",
+      "pronunciation": "/en/",
+      "meaning": "yen, circle",
+      "difficulty": 2,
+      "stroke_order": ["丨", "一", "丨", "一"],
+      "stroke_count": 4,
+      "mnemonics": "Japanese currency symbol",
+      "examples": [
+        {
+          "word": "十円",
+          "romaji": "juu'en",
+          "meaning": "10 yen"
+        }
+      ],
+      "common_mistakes": ["Not enclosing properly"],
+      "tags": ["money", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_015",
+      "character": "日",
+      "romaji": "nichi/hi",
+      "pronunciation": "/nitɕi/, /hi/",
+      "meaning": "sun, day",
+      "difficulty": 2,
+      "stroke_order": ["丨", "一", "丨", "一"],
+      "stroke_count": 4,
+      "mnemonics": "Picture of the sun",
+      "examples": [
+        {
+          "word": "日本",
+          "romaji": "nihon",
+          "meaning": "Japan"
+        }
+      ],
+      "common_mistakes": ["Making it too wide"],
+      "tags": ["time", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_016",
+      "character": "月",
+      "romaji": "getsu/tsuki",
+      "pronunciation": "/getsɯ/, /tsɯki/",
+      "meaning": "moon, month",
+      "difficulty": 2,
+      "stroke_order": ["丿", "一", "一", "一"],
+      "stroke_count": 4,
+      "mnemonics": "Crescent moon shape",
+      "examples": [
+        {
+          "word": "一月",
+          "romaji": "ichigatsu",
+          "meaning": "January"
+        }
+      ],
+      "common_mistakes": ["Making lines touch"],
+      "tags": ["time", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_017",
+      "character": "火",
+      "romaji": "ka/hi",
+      "pronunciation": "/ka/, /hi/",
+      "meaning": "fire, Tuesday",
+      "difficulty": 2,
+      "stroke_order": ["丶", "丿", "丿", "丶"],
+      "stroke_count": 4,
+      "mnemonics": "Flames rising",
+      "examples": [
+        {
+          "word": "火曜日",
+          "romaji": "kayoubi",
+          "meaning": "Tuesday"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order"],
+      "tags": ["element", "day", "JLPT5"]
+    },
+    {
+      "id": "kanji_018",
+      "character": "水",
+      "romaji": "sui/mizu",
+      "pronunciation": "/sɯi/, /mizɯ/",
+      "meaning": "water, Wednesday",
+      "difficulty": 2,
+      "stroke_order": ["丨", "丿", "丿", "一"],
+      "stroke_count": 4,
+      "mnemonics": "Water flowing",
+      "examples": [
+        {
+          "word": "水曜日",
+          "romaji": "suiyoubi",
+          "meaning": "Wednesday"
+        }
+      ],
+      "common_mistakes": ["Crossing strokes incorrectly"],
+      "tags": ["element", "day", "JLPT5"]
+    },
+    {
+      "id": "kanji_019",
+      "character": "木",
+      "romaji": "moku/ki",
+      "pronunciation": "/mokɯ/, /ki/",
+      "meaning": "tree, wood, Thursday",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿", "丶"],
+      "stroke_count": 4,
+      "mnemonics": "Picture of a tree",
+      "examples": [
+        {
+          "word": "木曜日",
+          "romaji": "mokuyoubi",
+          "meaning": "Thursday"
+        }
+      ],
+      "common_mistakes": ["Not crossing in center"],
+      "tags": ["nature", "day", "JLPT5"]
+    },
+    {
+      "id": "kanji_020",
+      "character": "金",
+      "romaji": "kin/kane",
+      "pronunciation": "/kin/, /kane/",
+      "meaning": "gold, money, Friday",
+      "difficulty": 3,
+      "stroke_order": ["丿", "一", "一", "丨", "丿", "丶", "一", "丶"],
+      "stroke_count": 8,
+      "mnemonics": "Metal/gold radical",
+      "examples": [
+        {
+          "word": "金曜日",
+          "romaji": "kin'youbi",
+          "meaning": "Friday"
+        }
+      ],
+      "common_mistakes": ["Complex stroke order"],
+      "tags": ["metal", "day", "JLPT5"]
+    },
+    {
+      "id": "kanji_021",
+      "character": "土",
+      "romaji": "do/tsuchi",
+      "pronunciation": "/do/, /tsɯtɕi/",
+      "meaning": "earth, soil, Saturday",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "stroke_count": 3,
+      "mnemonics": "Ground with cross",
+      "examples": [
+        {
+          "word": "土曜日",
+          "romaji": "doyoubi",
+          "meaning": "Saturday"
+        }
+      ],
+      "common_mistakes": ["Making it look like 士"],
+      "tags": ["element", "day", "JLPT5"]
+    },
+    {
+      "id": "kanji_022",
+      "character": "人",
+      "romaji": "jin/hito",
+      "pronunciation": "/dʑin/, /hito/",
+      "meaning": "person, human",
+      "difficulty": 1,
+      "stroke_order": ["丿", "丶"],
+      "stroke_count": 2,
+      "mnemonics": "Person with two legs",
+      "examples": [
+        {
+          "word": "日本人",
+          "romaji": "nihonjin",
+          "meaning": "Japanese person"
+        }
+      ],
+      "common_mistakes": ["Making strokes equal length"],
+      "tags": ["people", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_023",
+      "character": "口",
+      "romaji": "kou/kuchi",
+      "pronunciation": "/koː/, /kɯtɕi/",
+      "meaning": "mouth, opening",
+      "difficulty": 1,
+      "stroke_order": ["丨", "一", "一"],
+      "stroke_count": 3,
+      "mnemonics": "Square mouth opening",
+      "examples": [
+        {
+          "word": "入口",
+          "romaji": "iriguchi",
+          "meaning": "entrance"
+        }
+      ],
+      "common_mistakes": ["Making it too large"],
+      "tags": ["body", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_024",
+      "character": "目",
+      "romaji": "moku/me",
+      "pronunciation": "/mokɯ/, /me/",
+      "meaning": "eye",
+      "difficulty": 2,
+      "stroke_order": ["丨", "一", "一", "一", "一"],
+      "stroke_count": 5,
+      "mnemonics": "Eye turned sideways",
+      "examples": [
+        {
+          "word": "目",
+          "romaji": "me",
+          "meaning": "eye"
+        }
+      ],
+      "common_mistakes": ["Making lines uneven"],
+      "tags": ["body", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_025",
+      "character": "手",
+      "romaji": "shu/te",
+      "pronunciation": "/ɕɯ/, /te/",
+      "meaning": "hand",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿", "一"],
+      "stroke_count": 4,
+      "mnemonics": "Hand with fingers",
+      "examples": [
+        {
+          "word": "手",
+          "romaji": "te",
+          "meaning": "hand"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order"],
+      "tags": ["body", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_026",
+      "character": "足",
+      "romaji": "soku/ashi",
+      "pronunciation": "/sokɯ/, /aɕi/",
+      "meaning": "foot, leg",
+      "difficulty": 3,
+      "stroke_order": ["丨", "一", "丨", "一", "丨", "一", "丿"],
+      "stroke_count": 7,
+      "mnemonics": "Leg and foot shape",
+      "examples": [
+        {
+          "word": "足",
+          "romaji": "ashi",
+          "meaning": "foot, leg"
+        }
+      ],
+      "common_mistakes": ["Complex stroke order"],
+      "tags": ["body", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_027",
+      "character": "大",
+      "romaji": "dai/oo",
+      "pronunciation": "/dai/, /oː/",
+      "meaning": "big, large",
+      "difficulty": 1,
+      "stroke_order": ["一", "丿", "丶"],
+      "stroke_count": 3,
+      "mnemonics": "Person with arms spread wide",
+      "examples": [
+        {
+          "word": "大きい",
+          "romaji": "ookii",
+          "meaning": "big"
+        }
+      ],
+      "common_mistakes": ["Making strokes unbalanced"],
+      "tags": ["size", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_028",
+      "character": "小",
+      "romaji": "shou/chii",
+      "pronunciation": "/ɕoː/, /tɕiː/",
+      "meaning": "small, little",
+      "difficulty": 2,
+      "stroke_order": ["丨", "丿", "丶"],
+      "stroke_count": 3,
+      "mnemonics": "Divided into small parts",
+      "examples": [
+        {
+          "word": "小さい",
+          "romaji": "chiisai",
+          "meaning": "small"
+        }
+      ],
+      "common_mistakes": ["Making center stroke too long"],
+      "tags": ["size", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_029",
+      "character": "中",
+      "romaji": "chuu/naka",
+      "pronunciation": "/tɕɯː/, /naka/",
+      "meaning": "middle, inside",
+      "difficulty": 2,
+      "stroke_order": ["丨", "一", "丨", "一"],
+      "stroke_count": 4,
+      "mnemonics": "Line through middle of box",
+      "examples": [
+        {
+          "word": "中",
+          "romaji": "naka",
+          "meaning": "inside"
+        }
+      ],
+      "common_mistakes": ["Making vertical line off-center"],
+      "tags": ["position", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_030",
+      "character": "上",
+      "romaji": "jou/ue",
+      "pronunciation": "/dʑoː/, /ɯe/",
+      "meaning": "up, above",
+      "difficulty": 2,
+      "stroke_order": ["丨", "一", "一"],
+      "stroke_count": 3,
+      "mnemonics": "Line above another",
+      "examples": [
+        {
+          "word": "上",
+          "romaji": "ue",
+          "meaning": "above, up"
+        }
+      ],
+      "common_mistakes": ["Making bottom line too short"],
+      "tags": ["direction", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_031",
+      "character": "下",
+      "romaji": "ka/shita",
+      "pronunciation": "/ka/, /ɕita/",
+      "meaning": "down, below, under",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丶"],
+      "stroke_count": 3,
+      "mnemonics": "Line below another",
+      "examples": [
+        {
+          "word": "下",
+          "romaji": "shita",
+          "meaning": "below, under"
+        }
+      ],
+      "common_mistakes": ["Making dot in wrong place"],
+      "tags": ["direction", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_032",
+      "character": "左",
+      "romaji": "sa/hidari",
+      "pronunciation": "/sa/, /hidaɾi/",
+      "meaning": "left",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿", "一", "丨", "一"],
+      "stroke_count": 5,
+      "mnemonics": "工 with extra horizontal line",
+      "examples": [
+        {
+          "word": "左",
+          "romaji": "hidari",
+          "meaning": "left"
+        }
+      ],
+      "common_mistakes": ["Confusing with 右"],
+      "tags": ["direction", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_033",
+      "character": "右",
+      "romaji": "u/migi",
+      "pronunciation": "/ɯ/, /migi/",
+      "meaning": "right",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "口"],
+      "stroke_count": 5,
+      "mnemonics": "Mouth (口) on right side",
+      "examples": [
+        {
+          "word": "右",
+          "romaji": "migi",
+          "meaning": "right"
+        }
+      ],
+      "common_mistakes": ["Confusing with 左"],
+      "tags": ["direction", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_034",
+      "character": "前",
+      "romaji": "zen/mae",
+      "pronunciation": "/zen/, /mae/",
+      "meaning": "before, front",
+      "difficulty": 3,
+      "stroke_order": ["丶", "一", "丨", "丨", "一", "丨", "一", "一", "丨"],
+      "stroke_count": 9,
+      "mnemonics": "Complex character with knife radical",
+      "examples": [
+        {
+          "word": "前",
+          "romaji": "mae",
+          "meaning": "front, before"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order in bottom"],
+      "tags": ["direction", "time", "JLPT5"]
+    },
+    {
+      "id": "kanji_035",
+      "character": "後",
+      "romaji": "go/ato",
+      "pronunciation": "/go/, /ato/",
+      "meaning": "after, behind",
+      "difficulty": 3,
+      "stroke_order": ["丿", "丨", "丨", "一", "一", "丨", "一", "一", "丨"],
+      "stroke_count": 9,
+      "mnemonics": "Stepping behind",
+      "examples": [
+        {
+          "word": "後",
+          "romaji": "ato",
+          "meaning": "after, behind"
+        }
+      ],
+      "common_mistakes": ["Complex stroke order"],
+      "tags": ["direction", "time", "JLPT5"]
+    },
+    {
+      "id": "kanji_036",
+      "character": "先",
+      "romaji": "sen/saki",
+      "pronunciation": "/sen/, /saki/",
+      "meaning": "previous, ahead",
+      "difficulty": 2,
+      "stroke_order": ["一", "一", "丨", "一", "丿", "丶"],
+      "stroke_count": 6,
+      "mnemonics": "Legs going forward",
+      "examples": [
+        {
+          "word": "先生",
+          "romaji": "sensei",
+          "meaning": "teacher"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order in top"],
+      "tags": ["direction", "time", "JLPT5"]
+    },
+    {
+      "id": "kanji_037",
+      "character": "今",
+      "romaji": "kon/ima",
+      "pronunciation": "/kon/, /ima/",
+      "meaning": "now, present",
+      "difficulty": 2,
+      "stroke_order": ["丿", "丶", "一", "一"],
+      "stroke_count": 4,
+      "mnemonics": "Roof with person underneath (now)",
+      "examples": [
+        {
+          "word": "今",
+          "romaji": "ima",
+          "meaning": "now"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order"],
+      "tags": ["time", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_038",
+      "character": "年",
+      "romaji": "nen/toshi",
+      "pronunciation": "/nen/, /toɕi/",
+      "meaning": "year",
+      "difficulty": 2,
+      "stroke_order": ["丿", "一", "丨", "一", "一", "一"],
+      "stroke_count": 6,
+      "mnemonics": "Harvesting once per year",
+      "examples": [
+        {
+          "word": "今年",
+          "romaji": "kotoshi",
+          "meaning": "this year"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order"],
+      "tags": ["time", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_039",
+      "character": "時",
+      "romaji": "ji/toki",
+      "pronunciation": "/dʑi/, /toki/",
+      "meaning": "time, hour",
+      "difficulty": 3,
+      "stroke_order": ["丨", "一", "一", "一", "一", "丨", "一", "一", "丨", "一"],
+      "stroke_count": 10,
+      "mnemonics": "Sun (日) with temple radical",
+      "examples": [
+        {
+          "word": "時間",
+          "romaji": "jikan",
+          "meaning": "time"
+        }
+      ],
+      "common_mistakes": ["Complex stroke order"],
+      "tags": ["time", "JLPT5"]
+    },
+    {
+      "id": "kanji_040",
+      "character": "間",
+      "romaji": "kan/aida",
+      "pronunciation": "/kan/, /aida/",
+      "meaning": "interval, space",
+      "difficulty": 3,
+      "stroke_order": ["門", "日"],
+      "stroke_count": 12,
+      "mnemonics": "Sun through gate",
+      "examples": [
+        {
+          "word": "時間",
+          "romaji": "jikan",
+          "meaning": "time"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order in 門"],
+      "tags": ["time", "space", "JLPT5"]
+    },
+    {
+      "id": "kanji_041",
+      "character": "分",
+      "romaji": "fun/bun/wa",
+      "pronunciation": "/ɸɯn/, /bɯn/, /wa/",
+      "meaning": "minute, divide",
+      "difficulty": 2,
+      "stroke_order": ["丿", "丶", "一", "丨"],
+      "stroke_count": 4,
+      "mnemonics": "Eight (八) cutting with sword",
+      "examples": [
+        {
+          "word": "十分",
+          "romaji": "juppun",
+          "meaning": "10 minutes"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order"],
+      "tags": ["time", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_042",
+      "character": "半",
+      "romaji": "han/naka",
+      "pronunciation": "/han/, /naka/",
+      "meaning": "half",
+      "difficulty": 2,
+      "stroke_order": ["丨", "丨", "一", "丿", "丨"],
+      "stroke_count": 5,
+      "mnemonics": "Divided in half",
+      "examples": [
+        {
+          "word": "半分",
+          "romaji": "hanbun",
+          "meaning": "half"
+        }
+      ],
+      "common_mistakes": ["Making strokes uneven"],
+      "tags": ["quantity", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_043",
+      "character": "本",
+      "romaji": "hon/moto",
+      "pronunciation": "/hon/, /moto/",
+      "meaning": "book, origin, counter",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿", "丶", "一"],
+      "stroke_count": 5,
+      "mnemonics": "Tree (木) with line at base",
+      "examples": [
+        {
+          "word": "日本",
+          "romaji": "nihon",
+          "meaning": "Japan"
+        }
+      ],
+      "common_mistakes": ["Forgetting the horizontal line"],
+      "tags": ["object", "basic", "JLPT5"]
+    },
+    {
+      "id": "kanji_044",
+      "character": "学",
+      "romaji": "gaku/mana",
+      "pronunciation": "/gakɯ/, /mana/",
+      "meaning": "study, learning",
+      "difficulty": 3,
+      "stroke_order": ["丶", "丶", "一", "丨", "一", "丿", "丶", "一"],
+      "stroke_count": 8,
+      "mnemonics": "Child under roof learning",
+      "examples": [
+        {
+          "word": "学生",
+          "romaji": "gakusei",
+          "meaning": "student"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order in top"],
+      "tags": ["education", "JLPT5"]
+    },
+    {
+      "id": "kanji_045",
+      "character": "生",
+      "romaji": "sei/i",
+      "pronunciation": "/sei/, /i/",
+      "meaning": "life, birth, raw",
+      "difficulty": 2,
+      "stroke_order": ["丿", "一", "一", "丨", "一"],
+      "stroke_count": 5,
+      "mnemonics": "Plant growing from ground",
+      "examples": [
+        {
+          "word": "先生",
+          "romaji": "sensei",
+          "meaning": "teacher"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order"],
+      "tags": ["life", "education", "JLPT5"]
+    },
+    {
+      "id": "kanji_046",
+      "character": "食",
+      "romaji": "shoku/ta",
+      "pronunciation": "/ɕokɯ/, /ta/",
+      "meaning": "eat, food",
+      "difficulty": 3,
+      "stroke_order": ["丿", "丶", "丶", "一", "一", "丨", "丿", "丶", "一"],
+      "stroke_count": 9,
+      "mnemonics": "Person eating with lid on top",
+      "examples": [
+        {
+          "word": "食べる",
+          "romaji": "taberu",
+          "meaning": "to eat"
+        }
+      ],
+      "common_mistakes": ["Complex stroke order"],
+      "tags": ["action", "JLPT5"]
+    },
+    {
+      "id": "kanji_047",
+      "character": "飲",
+      "romaji": "in/no",
+      "pronunciation": "/in/, /no/",
+      "meaning": "drink",
+      "difficulty": 3,
+      "stroke_order": ["丿", "丶", "丶", "一", "丨", "一", "一", "丿", "乙", "丨", "一", "一"],
+      "stroke_count": 12,
+      "mnemonics": "Food radical with lacking (欠)",
+      "examples": [
+        {
+          "word": "飲む",
+          "romaji": "nomu",
+          "meaning": "to drink"
+        }
+      ],
+      "common_mistakes": ["Very complex stroke order"],
+      "tags": ["action", "JLPT5"]
+    },
+    {
+      "id": "kanji_048",
+      "character": "行",
+      "romaji": "kou/i/yu",
+      "pronunciation": "/koː/, /i/, /jɯ/",
+      "meaning": "go, line, conduct",
+      "difficulty": 2,
+      "stroke_order": ["丿", "一", "一", "一", "丨", "一"],
+      "stroke_count": 6,
+      "mnemonics": "Crossroads where you go",
+      "examples": [
+        {
+          "word": "行く",
+          "romaji": "iku",
+          "meaning": "to go"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order"],
+      "tags": ["action", "movement", "JLPT5"]
+    },
+    {
+      "id": "kanji_049",
+      "character": "来",
+      "romaji": "rai/ku",
+      "pronunciation": "/ɾai/, /kɯ/",
+      "meaning": "come",
+      "difficulty": 3,
+      "stroke_order": ["一", "丨", "丿", "丶", "一", "丨", "一"],
+      "stroke_count": 7,
+      "mnemonics": "Rice plant coming up",
+      "examples": [
+        {
+          "word": "来る",
+          "romaji": "kuru",
+          "meaning": "to come"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order in middle"],
+      "tags": ["action", "movement", "JLPT5"]
+    },
+    {
+      "id": "kanji_050",
+      "character": "見",
+      "romaji": "ken/mi",
+      "pronunciation": "/ken/, /mi/",
+      "meaning": "see, look",
+      "difficulty": 3,
+      "stroke_order": ["丨", "一", "一", "一", "一", "丿", "一"],
+      "stroke_count": 7,
+      "mnemonics": "Eye on legs looking around",
+      "examples": [
+        {
+          "word": "見る",
+          "romaji": "miru",
+          "meaning": "to see, to look"
+        }
+      ],
+      "common_mistakes": ["Wrong stroke order in top"],
+      "tags": ["action", "perception", "JLPT5"]
+    }
+  ],
+  "learning_progression": {
+    "suggested_order": [
+      "一", "二", "三", "四", "五", "六", "七", "八", "九", "十",
+      "百", "千", "万", "円",
+      "日", "月", "火", "水", "木", "金", "土",
+      "人", "口", "目", "手", "足",
+      "大", "小", "中", "上", "下", "左", "右",
+      "前", "後", "先", "今", "年", "時", "間", "分", "半",
+      "本", "学", "生", "食", "飲", "行", "来", "見"
+    ],
+    "difficulty_groups": {
+      "group_1_numbers": ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "百", "千", "万", "円"],
+      "group_2_time": ["日", "月", "火", "水", "木", "金", "土", "年", "時", "間", "分", "半"],
+      "group_3_body": ["人", "口", "目", "手", "足"],
+      "group_4_size_position": ["大", "小", "中", "上", "下", "左", "右"],
+      "group_5_direction_time": ["前", "後", "先", "今"],
+      "group_6_actions": ["本", "学", "生", "食", "飲", "行", "来", "見"]
+    },
+    "estimated_time": "3-4 months with consistent practice (after knowing hiragana/katakana)"
+  }
+}

@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "name": "Basic Hiragana Characters",
-    "description": "Core hiragana characters for beginners",
+    "name": "Complete Hiragana Characters",
+    "description": "All 46 basic hiragana characters",
     "difficulty": 1,
-    "total_characters": 15,
+    "total_characters": 46,
     "category": "hiragana_basic",
-    "version": "1.0"
+    "version": "2.0"
   },
   "characters": [
     {
@@ -292,15 +292,622 @@
       ],
       "common_mistakes": ["Making the curve too tight"],
       "tags": ["consonant", "basic", "s_row"]
+    },
+    {
+      "id": "hira_016",
+      "character": "た",
+      "romaji": "ta",
+      "pronunciation": "/ta/",
+      "meaning": "consonant-vowel sound 'tah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿", "一"],
+      "mnemonics": "Looks like a person with arms saying 'ta-da!'",
+      "examples": [
+        {
+          "word": "たべる",
+          "romaji": "taberu",
+          "meaning": "to eat"
+        }
+      ],
+      "common_mistakes": ["Confusing with ち"],
+      "tags": ["consonant", "basic", "t_row"]
+    },
+    {
+      "id": "hira_017",
+      "character": "ち",
+      "romaji": "chi",
+      "pronunciation": "/tʃi/",
+      "meaning": "consonant-vowel sound 'chee'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿", "一", "丨"],
+      "mnemonics": "Looks like a cheerleader with pom-poms",
+      "examples": [
+        {
+          "word": "ちいさい",
+          "romaji": "chiisai",
+          "meaning": "small"
+        }
+      ],
+      "common_mistakes": ["Pronouncing as 'tee' instead of 'chee'"],
+      "tags": ["consonant", "basic", "t_row", "irregular_pronunciation"]
+    },
+    {
+      "id": "hira_018",
+      "character": "つ",
+      "romaji": "tsu",
+      "pronunciation": "/tsu/",
+      "meaning": "consonant-vowel sound 'tsoo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like a tsunami wave",
+      "examples": [
+        {
+          "word": "つくえ",
+          "romaji": "tsukue",
+          "meaning": "desk"
+        }
+      ],
+      "common_mistakes": ["Pronouncing as 'too' instead of 'tsoo'"],
+      "tags": ["consonant", "basic", "t_row", "irregular_pronunciation"]
+    },
+    {
+      "id": "hira_019",
+      "character": "て",
+      "romaji": "te",
+      "pronunciation": "/te/",
+      "meaning": "consonant-vowel sound 'teh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿"],
+      "mnemonics": "Looks like a telephone pole",
+      "examples": [
+        {
+          "word": "て",
+          "romaji": "te",
+          "meaning": "hand"
+        }
+      ],
+      "common_mistakes": ["Making the curve too sharp"],
+      "tags": ["consonant", "basic", "t_row"]
+    },
+    {
+      "id": "hira_020",
+      "character": "と",
+      "romaji": "to",
+      "pronunciation": "/to/",
+      "meaning": "consonant-vowel sound 'toh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like a toe with a nail",
+      "examples": [
+        {
+          "word": "とり",
+          "romaji": "tori",
+          "meaning": "bird"
+        }
+      ],
+      "common_mistakes": ["Making it too similar to こ"],
+      "tags": ["consonant", "basic", "t_row"]
+    },
+    {
+      "id": "hira_021",
+      "character": "な",
+      "romaji": "na",
+      "pronunciation": "/na/",
+      "meaning": "consonant-vowel sound 'nah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿", "一", "丨"],
+      "mnemonics": "Looks like a knot in a rope",
+      "examples": [
+        {
+          "word": "なまえ",
+          "romaji": "namae",
+          "meaning": "name"
+        }
+      ],
+      "common_mistakes": ["Forgetting the vertical stroke"],
+      "tags": ["consonant", "basic", "n_row"]
+    },
+    {
+      "id": "hira_022",
+      "character": "に",
+      "romaji": "ni",
+      "pronunciation": "/ni/",
+      "meaning": "consonant-vowel sound 'nee'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like two knees bending",
+      "examples": [
+        {
+          "word": "にほん",
+          "romaji": "nihon",
+          "meaning": "Japan"
+        }
+      ],
+      "common_mistakes": ["Confusing with similar characters"],
+      "tags": ["consonant", "basic", "n_row"]
+    },
+    {
+      "id": "hira_023",
+      "character": "ぬ",
+      "romaji": "nu",
+      "pronunciation": "/nu/",
+      "meaning": "consonant-vowel sound 'noo'",
+      "difficulty": 3,
+      "stroke_order": ["丿", "一", "丨"],
+      "mnemonics": "Looks like noodles on a fork",
+      "examples": [
+        {
+          "word": "ぬの",
+          "romaji": "nuno",
+          "meaning": "cloth"
+        }
+      ],
+      "common_mistakes": ["Complex stroke order"],
+      "tags": ["consonant", "basic", "n_row"]
+    },
+    {
+      "id": "hira_024",
+      "character": "ね",
+      "romaji": "ne",
+      "pronunciation": "/ne/",
+      "meaning": "consonant-vowel sound 'neh'",
+      "difficulty": 3,
+      "stroke_order": ["一", "丨", "一", "丿"],
+      "mnemonics": "Looks like a cat saying 'neko'",
+      "examples": [
+        {
+          "word": "ねこ",
+          "romaji": "neko",
+          "meaning": "cat"
+        }
+      ],
+      "common_mistakes": ["Making it too angular"],
+      "tags": ["consonant", "basic", "n_row"]
+    },
+    {
+      "id": "hira_025",
+      "character": "の",
+      "romaji": "no",
+      "pronunciation": "/no/",
+      "meaning": "consonant-vowel sound 'noh'",
+      "difficulty": 1,
+      "stroke_order": ["丿", "一"],
+      "mnemonics": "Looks like the word 'no' in a circle",
+      "examples": [
+        {
+          "word": "の",
+          "romaji": "no",
+          "meaning": "possessive particle"
+        }
+      ],
+      "common_mistakes": ["Making the circle too small"],
+      "tags": ["consonant", "basic", "n_row", "particle"]
+    },
+    {
+      "id": "hira_026",
+      "character": "は",
+      "romaji": "ha",
+      "pronunciation": "/ha/",
+      "meaning": "consonant-vowel sound 'hah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like someone laughing 'ha ha'",
+      "examples": [
+        {
+          "word": "はな",
+          "romaji": "hana",
+          "meaning": "flower"
+        }
+      ],
+      "common_mistakes": ["Confusing with ほ"],
+      "tags": ["consonant", "basic", "h_row", "particle_wa"]
+    },
+    {
+      "id": "hira_027",
+      "character": "ひ",
+      "romaji": "hi",
+      "pronunciation": "/hi/",
+      "meaning": "consonant-vowel sound 'hee'",
+      "difficulty": 2,
+      "stroke_order": ["丨", "丿"],
+      "mnemonics": "Looks like a person saying 'hi'",
+      "examples": [
+        {
+          "word": "ひと",
+          "romaji": "hito",
+          "meaning": "person"
+        }
+      ],
+      "common_mistakes": ["Making the strokes disconnected"],
+      "tags": ["consonant", "basic", "h_row"]
+    },
+    {
+      "id": "hira_028",
+      "character": "ふ",
+      "romaji": "fu",
+      "pronunciation": "/ɸu/",
+      "meaning": "consonant-vowel sound 'foo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丨", "丶"],
+      "mnemonics": "Looks like Mount Fuji",
+      "examples": [
+        {
+          "word": "ふゆ",
+          "romaji": "fuyu",
+          "meaning": "winter"
+        }
+      ],
+      "common_mistakes": ["Pronouncing as 'hoo' instead of 'foo'"],
+      "tags": ["consonant", "basic", "h_row", "irregular_pronunciation"]
+    },
+    {
+      "id": "hira_029",
+      "character": "へ",
+      "romaji": "he",
+      "pronunciation": "/he/",
+      "meaning": "consonant-vowel sound 'heh'",
+      "difficulty": 1,
+      "stroke_order": ["一"],
+      "mnemonics": "Simple roof shape, like a house",
+      "examples": [
+        {
+          "word": "へや",
+          "romaji": "heya",
+          "meaning": "room"
+        }
+      ],
+      "common_mistakes": ["Confusing with katakana ヘ"],
+      "tags": ["consonant", "basic", "h_row", "particle_e", "simple"]
+    },
+    {
+      "id": "hira_030",
+      "character": "ほ",
+      "romaji": "ho",
+      "pronunciation": "/ho/",
+      "meaning": "consonant-vowel sound 'hoh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丨", "一"],
+      "mnemonics": "Looks like someone saying 'ho ho ho'",
+      "examples": [
+        {
+          "word": "ほん",
+          "romaji": "hon",
+          "meaning": "book"
+        }
+      ],
+      "common_mistakes": ["Confusing with は"],
+      "tags": ["consonant", "basic", "h_row"]
+    },
+    {
+      "id": "hira_031",
+      "character": "ま",
+      "romaji": "ma",
+      "pronunciation": "/ma/",
+      "meaning": "consonant-vowel sound 'mah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like mama's smiling face",
+      "examples": [
+        {
+          "word": "まち",
+          "romaji": "machi",
+          "meaning": "town"
+        }
+      ],
+      "common_mistakes": ["Making loops instead of straight lines"],
+      "tags": ["consonant", "basic", "m_row"]
+    },
+    {
+      "id": "hira_032",
+      "character": "み",
+      "romaji": "mi",
+      "pronunciation": "/mi/",
+      "meaning": "consonant-vowel sound 'mee'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like the number 3 with curves",
+      "examples": [
+        {
+          "word": "みず",
+          "romaji": "mizu",
+          "meaning": "water"
+        }
+      ],
+      "common_mistakes": ["Not making the curves smooth"],
+      "tags": ["consonant", "basic", "m_row"]
+    },
+    {
+      "id": "hira_033",
+      "character": "む",
+      "romaji": "mu",
+      "pronunciation": "/mu/",
+      "meaning": "consonant-vowel sound 'moo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like a cow saying 'moo'",
+      "examples": [
+        {
+          "word": "むし",
+          "romaji": "mushi",
+          "meaning": "insect"
+        }
+      ],
+      "common_mistakes": ["Making it too similar to ん"],
+      "tags": ["consonant", "basic", "m_row"]
+    },
+    {
+      "id": "hira_034",
+      "character": "め",
+      "romaji": "me",
+      "pronunciation": "/me/",
+      "meaning": "consonant-vowel sound 'meh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿", "一"],
+      "mnemonics": "Looks like an eye (me = eye in Japanese)",
+      "examples": [
+        {
+          "word": "め",
+          "romaji": "me",
+          "meaning": "eye"
+        }
+      ],
+      "common_mistakes": ["Forgetting the bottom stroke"],
+      "tags": ["consonant", "basic", "m_row"]
+    },
+    {
+      "id": "hira_035",
+      "character": "も",
+      "romaji": "mo",
+      "pronunciation": "/mo/",
+      "meaning": "consonant-vowel sound 'moh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like more loops",
+      "examples": [
+        {
+          "word": "もも",
+          "romaji": "momo",
+          "meaning": "peach"
+        }
+      ],
+      "common_mistakes": ["Making loops uneven"],
+      "tags": ["consonant", "basic", "m_row", "particle"]
+    },
+    {
+      "id": "hira_036",
+      "character": "や",
+      "romaji": "ya",
+      "pronunciation": "/ja/",
+      "meaning": "consonant-vowel sound 'yah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like someone yawning",
+      "examples": [
+        {
+          "word": "やま",
+          "romaji": "yama",
+          "meaning": "mountain"
+        }
+      ],
+      "common_mistakes": ["Confusing with ゆ"],
+      "tags": ["consonant", "basic", "y_row"]
+    },
+    {
+      "id": "hira_037",
+      "character": "ゆ",
+      "romaji": "yu",
+      "pronunciation": "/ju/",
+      "meaning": "consonant-vowel sound 'yoo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like a fish swimming",
+      "examples": [
+        {
+          "word": "ゆき",
+          "romaji": "yuki",
+          "meaning": "snow"
+        }
+      ],
+      "common_mistakes": ["Making the loop too small"],
+      "tags": ["consonant", "basic", "y_row"]
+    },
+    {
+      "id": "hira_038",
+      "character": "よ",
+      "romaji": "yo",
+      "pronunciation": "/jo/",
+      "meaning": "consonant-vowel sound 'yoh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like a yo-yo on a string",
+      "examples": [
+        {
+          "word": "よる",
+          "romaji": "yoru",
+          "meaning": "night"
+        }
+      ],
+      "common_mistakes": ["Not connecting the strokes"],
+      "tags": ["consonant", "basic", "y_row"]
+    },
+    {
+      "id": "hira_039",
+      "character": "ら",
+      "romaji": "ra",
+      "pronunciation": "/ɾa/",
+      "meaning": "consonant-vowel sound 'rah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like a rabbit hopping",
+      "examples": [
+        {
+          "word": "らいねん",
+          "romaji": "rainen",
+          "meaning": "next year"
+        }
+      ],
+      "common_mistakes": ["Pronouncing as 'la' instead of soft 'ra'"],
+      "tags": ["consonant", "basic", "r_row"]
+    },
+    {
+      "id": "hira_040",
+      "character": "り",
+      "romaji": "ri",
+      "pronunciation": "/ɾi/",
+      "meaning": "consonant-vowel sound 'ree'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨"],
+      "mnemonics": "Looks like a reed in the wind",
+      "examples": [
+        {
+          "word": "りんご",
+          "romaji": "ringo",
+          "meaning": "apple"
+        }
+      ],
+      "common_mistakes": ["Making it too angular"],
+      "tags": ["consonant", "basic", "r_row"]
+    },
+    {
+      "id": "hira_041",
+      "character": "る",
+      "romaji": "ru",
+      "pronunciation": "/ɾu/",
+      "meaning": "consonant-vowel sound 'roo'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿"],
+      "mnemonics": "Looks like a loop-de-loop",
+      "examples": [
+        {
+          "word": "るす",
+          "romaji": "rusu",
+          "meaning": "absence"
+        }
+      ],
+      "common_mistakes": ["Not making the loop round"],
+      "tags": ["consonant", "basic", "r_row"]
+    },
+    {
+      "id": "hira_042",
+      "character": "れ",
+      "romaji": "re",
+      "pronunciation": "/ɾe/",
+      "meaning": "consonant-vowel sound 'reh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿"],
+      "mnemonics": "Looks like a railroad track",
+      "examples": [
+        {
+          "word": "れいぞうこ",
+          "romaji": "reizouko",
+          "meaning": "refrigerator"
+        }
+      ],
+      "common_mistakes": ["Making the curve too tight"],
+      "tags": ["consonant", "basic", "r_row"]
+    },
+    {
+      "id": "hira_043",
+      "character": "ろ",
+      "romaji": "ro",
+      "pronunciation": "/ɾo/",
+      "meaning": "consonant-vowel sound 'roh'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "一"],
+      "mnemonics": "Looks like a road with a turn",
+      "examples": [
+        {
+          "word": "ろく",
+          "romaji": "roku",
+          "meaning": "six"
+        }
+      ],
+      "common_mistakes": ["Confusing with る"],
+      "tags": ["consonant", "basic", "r_row"]
+    },
+    {
+      "id": "hira_044",
+      "character": "わ",
+      "romaji": "wa",
+      "pronunciation": "/wa/",
+      "meaning": "consonant-vowel sound 'wah'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Looks like someone waving",
+      "examples": [
+        {
+          "word": "わたし",
+          "romaji": "watashi",
+          "meaning": "I/me"
+        }
+      ],
+      "common_mistakes": ["Confusing with れ"],
+      "tags": ["consonant", "basic", "w_row", "particle"]
+    },
+    {
+      "id": "hira_045",
+      "character": "を",
+      "romaji": "wo",
+      "pronunciation": "/o/",
+      "meaning": "object marker particle (pronounced 'o')",
+      "difficulty": 3,
+      "stroke_order": ["一", "丨", "丿"],
+      "mnemonics": "Special を particle, looks complex",
+      "examples": [
+        {
+          "word": "本を読む",
+          "romaji": "hon wo yomu",
+          "meaning": "read a book"
+        }
+      ],
+      "common_mistakes": ["Pronouncing as 'wo' instead of 'o'"],
+      "tags": ["consonant", "basic", "w_row", "particle", "object_marker"]
+    },
+    {
+      "id": "hira_046",
+      "character": "ん",
+      "romaji": "n",
+      "pronunciation": "/n/",
+      "meaning": "nasal sound 'n'",
+      "difficulty": 2,
+      "stroke_order": ["一", "丿"],
+      "mnemonics": "Looks like someone humming 'n'",
+      "examples": [
+        {
+          "word": "にほん",
+          "romaji": "nihon",
+          "meaning": "Japan"
+        }
+      ],
+      "common_mistakes": ["Confusing with し"],
+      "tags": ["consonant", "basic", "special", "nasal"]
     }
   ],
   "learning_progression": {
-    "suggested_order": ["あ", "い", "う", "え", "お", "か", "き", "く", "け", "こ", "さ", "し", "す", "せ", "そ"],
+    "suggested_order": [
+      "あ", "い", "う", "え", "お",
+      "か", "き", "く", "け", "こ",
+      "さ", "し", "す", "せ", "そ",
+      "た", "ち", "つ", "て", "と",
+      "な", "に", "ぬ", "ね", "の",
+      "は", "ひ", "ふ", "へ", "ほ",
+      "ま", "み", "む", "め", "も",
+      "や", "ゆ", "よ",
+      "ら", "り", "る", "れ", "ろ",
+      "わ", "を", "ん"
+    ],
     "difficulty_groups": {
       "group_1_vowels": ["あ", "い", "う", "え", "お"],
       "group_2_k_row": ["か", "き", "く", "け", "こ"],
-      "group_3_s_row": ["さ", "し", "す", "せ", "そ"]
+      "group_3_s_row": ["さ", "し", "す", "せ", "そ"],
+      "group_4_t_row": ["た", "ち", "つ", "て", "と"],
+      "group_5_n_row": ["な", "に", "ぬ", "ね", "の"],
+      "group_6_h_row": ["は", "ひ", "ふ", "へ", "ほ"],
+      "group_7_m_row": ["ま", "み", "む", "め", "も"],
+      "group_8_y_row": ["や", "ゆ", "よ"],
+      "group_9_r_row": ["ら", "り", "る", "れ", "ろ"],
+      "group_10_w_n": ["わ", "を", "ん"]
     },
-    "estimated_time": "2-3 days for vowels, 3-4 days for each consonant row"
+    "estimated_time": "2-3 weeks to learn all 46 characters with regular practice"
   }
 }
