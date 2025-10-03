@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: bot-data-pvc
+  namespace: japanese-bot
+  labels:
+    app: japanese-learning-bot
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi  # SQLite database storage
+  # storageClassName: standard  # Uncomment and set based on your cluster

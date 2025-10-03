@@ -1,0 +1,92 @@
+# Prometheus alerting rules for Japanese Learning Bot
+groups:
+  - name: bot_alerts
+    interval: 30s
+    rules:
+      # Bot is down
+      - alert: BotDown
+        expr: up{job="japanese-bot"} == 0
+        for: 2m
+        labels:
+          severity: critical
+          component: bot
+        annotations:
+          summary: "Japanese Learning Bot is down"
+          description: "Bot instance {{ $labels.kubernetes_pod_name }} has been down for more than 2 minutes"
+
+      # High error rate
+      - alert: HighErrorRate
+        expr: rate(bot_errors_total[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          component: bot
+        annotations:
+          summary: "High error rate detected"
+          description: "Bot is experiencing {{ $value }} errors per second"
+
+      # High memory usage
+      - alert: HighMemoryUsage
+        expr: container_memory_usage_bytes{pod=~"japanese-learning-bot.*"} / container_spec_memory_limit_bytes{pod=~"japanese-learning-bot.*"} > 0.8
+        for: 5m
+        labels:
+          severity: warning
+          component: bot
+        annotations:
+          summary: "High memory usage"
+          description: "Bot memory usage is above 80% (current: {{ $value | humanizePercentage }})"
+
+      # Database connection issues
+      - alert: DatabaseConnectionFailures
+        expr: rate(bot_database_errors_total[5m]) > 0
+        for: 3m
+        labels:
+          severity: warning
+          component: database
+        annotations:
+          summary: "Database connection failures"
+          description: "Detecting {{ $value }} database errors per second"
+
+      # Review backlog building up
+      - alert: ReviewBacklogHigh
+        expr: bot_reviews_due_total > 1000
+        for: 1h
+        labels:
+          severity: info
+          component: learning
+        annotations:
+          summary: "High review backlog"
+          description: "{{ $value }} reviews are due across all users"
+
+      # Low user engagement
+      - alert: LowDailyActiveUsers
+        expr: bot_daily_active_users < 10
+        for: 24h
+        labels:
+          severity: info
+          component: analytics
+        annotations:
+          summary: "Low daily active users"
+          description: "Only {{ $value }} active users in the last 24 hours"
+
+      # Telegram API rate limiting
+      - alert: TelegramRateLimitHit
+        expr: rate(bot_telegram_rate_limit_errors_total[5m]) > 0
+        for: 2m
+        labels:
+          severity: warning
+          component: telegram_api
+        annotations:
+          summary: "Hitting Telegram API rate limits"
+          description: "Bot is being rate limited by Telegram API"
+
+      # Pod restarts
+      - alert: FrequentPodRestarts
+        expr: rate(kube_pod_container_status_restarts_total{namespace="japanese-bot"}[1h]) > 0.05
+        for: 10m
+        labels:
+          severity: warning
+          component: kubernetes
+        annotations:
+          summary: "Frequent pod restarts"
+          description: "Pod {{ $labels.pod }} is restarting frequently"

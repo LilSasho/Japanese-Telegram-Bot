@@ -1,0 +1,127 @@
+{
+  "dashboard": {
+    "title": "Japanese Learning Bot - Overview",
+    "tags": ["telegram", "japanese", "learning"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Active Users (24h)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "bot_daily_active_users",
+            "legendFormat": "Active Users"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Total Reviews Completed Today",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "increase(bot_reviews_completed_total[24h])",
+            "legendFormat": "Reviews"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 6, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "Bot Uptime",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "up{job=\"japanese-bot\"}",
+            "legendFormat": "Status"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 12, "y": 0}
+      },
+      {
+        "id": 4,
+        "title": "Error Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rate(bot_errors_total[5m])",
+            "legendFormat": "Errors/sec"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 18, "y": 0}
+      },
+      {
+        "id": 5,
+        "title": "Message Processing Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(bot_messages_processed_total[5m])",
+            "legendFormat": "Messages/sec"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 4}
+      },
+      {
+        "id": 6,
+        "title": "Memory Usage",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "container_memory_usage_bytes{pod=~\"japanese-learning-bot.*\"} / 1024 / 1024",
+            "legendFormat": "Memory (MB)"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 4}
+      },
+      {
+        "id": 7,
+        "title": "Reviews Due by Type",
+        "type": "piechart",
+        "targets": [
+          {
+            "expr": "bot_reviews_due_by_content_type",
+            "legendFormat": "{{ content_type }}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 8, "x": 0, "y": 12}
+      },
+      {
+        "id": 8,
+        "title": "User Streak Distribution",
+        "type": "bargauge",
+        "targets": [
+          {
+            "expr": "bot_user_streak_days_bucket",
+            "legendFormat": "{{ le }} days"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 8, "x": 8, "y": 12}
+      },
+      {
+        "id": 9,
+        "title": "Database Query Latency",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(bot_database_query_duration_seconds_bucket[5m]))",
+            "legendFormat": "p95 latency"
+          },
+          {
+            "expr": "histogram_quantile(0.99, rate(bot_database_query_duration_seconds_bucket[5m]))",
+            "legendFormat": "p99 latency"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 8, "x": 16, "y": 12}
+      }
+    ],
+    "refresh": "30s",
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "version": 1
+  }
+}

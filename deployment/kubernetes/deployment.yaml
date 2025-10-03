@@ -1,0 +1,111 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: japanese-learning-bot
+  namespace: japanese-bot
+  labels:
+    app: japanese-learning-bot
+    version: v1
+spec:
+  replicas: 1  # Telegram bots should only have 1 instance to avoid duplicate message processing
+  strategy:
+    type: Recreate  # Ensure only one instance runs at a time
+  selector:
+    matchLabels:
+      app: japanese-learning-bot
+  template:
+    metadata:
+      labels:
+        app: japanese-learning-bot
+        version: v1
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8000"
+        prometheus.io/path: "/metrics"
+    spec:
+      serviceAccountName: bot-service-account
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        fsGroup: 1000
+
+      containers:
+      - name: bot
+        image: your-registry/japanese-learning-bot:latest  # Update with your container registry
+        imagePullPolicy: Always
+
+        # Environment variables from ConfigMap
+        envFrom:
+        - configMapRef:
+            name: bot-config
+
+        # Sensitive environment variables from Secret
+        env:
+        - name: BOT_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: bot-secrets
+              key: BOT_TOKEN
+
+        # Resource limits
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+
+        # Persistent storage for SQLite database
+        volumeMounts:
+        - name: bot-data
+          mountPath: /app/data
+        - name: content-data
+          mountPath: /app/data/content
+          readOnly: true
+
+        # Health checks
+        livenessProbe:
+          exec:
+            command:
+            - python
+            - -c
+            - "import app; print('OK')"
+          initialDelaySeconds: 30
+          periodSeconds: 60
+          timeoutSeconds: 10
+          failureThreshold: 3
+
+        readinessProbe:
+          exec:
+            command:
+            - python
+            - -c
+            - "import app; print('OK')"
+          initialDelaySeconds: 10
+          periodSeconds: 30
+          timeoutSeconds: 5
+
+      volumes:
+      - name: bot-data
+        persistentVolumeClaim:
+          claimName: bot-data-pvc
+      - name: content-data
+        configMap:
+          name: learning-content
+
+      # Restart policy
+      restartPolicy: Always
+
+      # Node selection (optional)
+      # nodeSelector:
+      #   workload-type: bot
+
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: bot-service-account
+  namespace: japanese-bot
+  labels:
+    app: japanese-learning-bot
